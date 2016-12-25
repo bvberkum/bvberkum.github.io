@@ -1,0 +1,8 @@
+#!/usr/bin/env sitefile
+sitefile: 0.0.3-dev-master
+port: 8069
+routes: 
+
+  index: static:index.html
+  '': redir:index
+
