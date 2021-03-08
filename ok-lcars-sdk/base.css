@@ -1,134 +1,7 @@
-body {
-  padding: 15pt; }
-
-body > .wrapper.row {
-  height: 100%; }
-
-.wrapper.spacer {
-  margin: 0; }
-
-p.capital {
-  text-transform: uppercase; }
-
-p {
-  text-align: justify;
-  text-justify: inter-word; }
-
-.button-wrap {
-  flex-wrap: wrap;
-  margin-top: 0;
-  padding-top: 5px;
-  width: 100%; }
-  .button-wrap .button {
-    margin-bottom: 5px;
-    margin-left: 5px; }
-
-.form-1-1 > .content {
-  margin: 11px auto 6px;
-  padding: 0 35px; }
-
-#terminal-003 > .column-1,
-#terminal-003 > .column-2,
-#terminal-003 > .column > .wrapper {
-  height: 100%; }
-  #terminal-003 > .column-1 > .content.flexcv,
-  #terminal-003 > .column-2 > .content.flexcv,
-  #terminal-003 > .column > .wrapper > .content.flexcv {
-    height: 100%;
-    overflow-y: scroll; }
-
-#terminal-003 > .column-1 {
-  width: 78%; }
-
-#terminal-003 > .column-2 {
-  width: 22%; }
-
-.form-1-3 > .header .title {
-  text-align: right; }
-
-.form-1-3 > .header .button-wrap {
-  width: 320px;
-  right: 0px;
-  bottom: 35px;
-  position: absolute; }
-
-.form-1-3 > .header pre {
-  font-size: 24px; }
-
-.form-4 > .content {
-  height: 100%;
-  height: 300px;
-  overflow: hidden; }
-  .form-4 > .content .bar.vertical {
-    margin-top: 75px;
-    margin-bottom: 45px; }
-
-.form-4 > .header,
-.form-4 > .footer {
-  height: 220px; }
-
-/*
-  XXX: I'd overlap this with the .bar class but bar sizes differently from button nodes */
-.nobutton {
-  min-width: 150px;
-  min-height: 60px;
-  cursor: default; }
-
-.nobutton[data-label]:before {
-  content: attr(data-label); }
-
-.nobutton:before {
-  font-size: 20px;
-  display: block;
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  right: 0px;
-  padding: 4px 8px;
-  letter-spacing: -1px;
-  line-height: 1.25;
-  overflow: hidden;
-  max-height: 100%; }
-
-/*
-  XXX: Define top/bottom just like left/right/pill, also apply to bar not just
-    button? */
-.bar.top,
-.button.top,
-.nobutton.top {
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px; }
-
-.bar.bottom,
-.nobutton.bottom,
-.button.bottom {
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px; }
-
-.bar.top:before, .bar.bottom:before, .bar.top:after, .bar.bottom:after,
-.nobutton.top:before,
-.nobutton.bottom:before,
-.nobutton.top:after,
-.nobutton.bottom:after,
-.button.top:before,
-.button.bottom:before,
-.button.top:after,
-.button.bottom:after {
-  left: 25px;
-  right: 25px; }
-
-/* Some helpers for FORM-1 */
-#columnA,
-#columnB {
-  overflow-y: scroll; }
-  #columnA > .wrapper,
-  #columnB > .wrapper {
-    height: calc( 100vh - 30px); }
-
-#columnA > .wrapper > .content.flexcv,
-#columnB > .wrapper > .content.flexcv {
-  overflow-y: scroll; }
-
+@charset "UTF-8";
+/* Load fonts */
+@import 'lcarssdk-fonts.css';
+/* Background and text colors (as SCSS variables and text/bg classes) */
 /* Tango palette <http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines>*/
 /* Butter 1 */
 /* Butter 1 - 20% */
@@ -161,257 +34,2879 @@ p {
 /* Aluminium 4 */
 /* Aluminium 5 */
 /* Aluminium 6 */
+.bg-cat-tng-2366-yellow-1 {
+  background-color: #fee042;
+}
+
+.text-tng-2366-yellow-1 {
+  background-color: #fee042;
+}
+
+.bg-cat-tng-2366-yellow-2 {
+  background-color: #febc09;
+}
+
+.text-tng-2366-yellow-2 {
+  background-color: #febc09;
+}
+
+.bg-cat-tng-2366-blue-1 {
+  background-color: #a7bed0;
+}
+
+.text-tng-2366-blue-1 {
+  background-color: #a7bed0;
+}
+
+.bg-cat-tng-2366-blue-2 {
+  background-color: #7d81c0;
+}
+
+.text-tng-2366-blue-2 {
+  background-color: #7d81c0;
+}
+
+.bg-cat-tng-2366-brown-1 {
+  background-color: #d8b458;
+}
+
+.text-tng-2366-brown-1 {
+  background-color: #d8b458;
+}
+
+.bg-cat-tng-2366-brown-2 {
+  background-color: #98765b;
+}
+
+.text-tng-2366-brown-2 {
+  background-color: #98765b;
+}
+
 /* Node backgrounds colors */
 /*   1. Oranges */
 .bg-cat-1-1,
-.bg-cat-1-1 > *:not([class*="bg-"]) {
+.bg-cat-1-1 > *:not([class*=bg-]) {
   background-color: #fcaf3e;
-  border-color: #fcaf3e; }
+  border-color: #fcaf3e;
+}
 
 .bg-cat-1-1-10,
-.bg-cat-1-1-10 > *:not([class*="bg-"]) {
+.bg-cat-1-1-10 > *:not([class*=bg-]) {
   background-color: #fcf9e3;
-  border-color: #fcf9e3; }
+  border-color: #fcf9e3;
+}
 
 .bg-cat-1-1-20,
-.bg-cat-1-1-20 > *:not([class*="bg-"]) {
+.bg-cat-1-1-20 > *:not([class*=bg-]) {
   background-color: #fce8ca;
-  border-color: #fce8ca; }
+  border-color: #fce8ca;
+}
 
 .bg-cat-1-2,
-.bg-cat-1-2 > *:not([class*="bg-"]) {
+.bg-cat-1-2 > *:not([class*=bg-]) {
   background-color: #f57900;
-  border-color: #f57900; }
+  border-color: #f57900;
+}
 
 .bg-cat-1-3,
-.bg-cat-1-3 > *:not([class*="bg-"]) {
+.bg-cat-1-3 > *:not([class*=bg-]) {
   background-color: #ce5c00;
-  border-color: #ce5c00; }
+  border-color: #ce5c00;
+}
 
 /*   2. Creme browns (Tango choco) */
 .bg-cat-2-1,
-.bg-cat-2-1 > *:not([class*="bg-"]) {
+.bg-cat-2-1 > *:not([class*=bg-]) {
   background-color: #8f5902;
-  border-color: #8f5902; }
+  border-color: #8f5902;
+}
 
 .bg-cat-2-2,
-.bg-cat-2-2 > *:not([class*="bg-"]) {
+.bg-cat-2-2 > *:not([class*=bg-]) {
   background-color: #c17d11;
-  border-color: #c17d11; }
+  border-color: #c17d11;
+}
 
 .bg-cat-2-3,
-.bg-cat-2-3 > *:not([class*="bg-"]) {
+.bg-cat-2-3 > *:not([class*=bg-]) {
   background-color: #e9b96e;
-  border-color: #e9b96e; }
+  border-color: #e9b96e;
+}
 
 /*   3. Greens */
 .bg-cat-3-1,
-.bg-cat-3-1 > *:not([class*="bg-"]) {
+.bg-cat-3-1 > *:not([class*=bg-]) {
   background-color: #4e9a06;
-  border-color: #4e9a06; }
+  border-color: #4e9a06;
+}
 
 .bg-cat-3-2,
-.bg-cat-3-2 > *:not([class*="bg-"]) {
+.bg-cat-3-2 > *:not([class*=bg-]) {
   background-color: #73d216;
-  border-color: #73d216; }
+  border-color: #73d216;
+}
 
 .bg-cat-3-3,
-.bg-cat-3-3 > *:not([class*="bg-"]) {
+.bg-cat-3-3 > *:not([class*=bg-]) {
   background-color: #8ae234;
-  border-color: #8ae234; }
+  border-color: #8ae234;
+}
 
 /*   4. Purples (Tango plum) */
 .bg-cat-4-1,
-.bg-cat-4-1 > *:not([class*="bg-"]) {
+.bg-cat-4-1 > *:not([class*=bg-]) {
   background-color: #ad7fa8;
-  border-color: #ad7fa8; }
+  border-color: #ad7fa8;
+}
 
 .bg-cat-4-2,
-.bg-cat-4-2 > *:not([class*="bg-"]) {
+.bg-cat-4-2 > *:not([class*=bg-]) {
   background-color: #75507b;
-  border-color: #75507b; }
+  border-color: #75507b;
+}
 
 .bg-cat-4-3,
-.bg-cat-4-3 > *:not([class*="bg-"]) {
+.bg-cat-4-3 > *:not([class*=bg-]) {
   background-color: #5c3566;
-  border-color: #5c3566; }
+  border-color: #5c3566;
+}
 
 /*   5. Yellow browns (Tango butter) */
 .bg-cat-5-1,
-.bg-cat-5-1 > *:not([class*="bg-"]) {
+.bg-cat-5-1 > *:not([class*=bg-]) {
   background-color: #c4a000;
-  border-color: #c4a000; }
+  border-color: #c4a000;
+}
 
 .bg-cat-5-2,
-.bg-cat-5-2 > *:not([class*="bg-"]) {
+.bg-cat-5-2 > *:not([class*=bg-]) {
   background-color: #edd400;
-  border-color: #edd400; }
+  border-color: #edd400;
+}
 
 .bg-cat-5-3,
-.bg-cat-5-3 > *:not([class*="bg-"]) {
+.bg-cat-5-3 > *:not([class*=bg-]) {
   background-color: #fce94f;
-  border-color: #fce94f; }
+  border-color: #fce94f;
+}
 
-/*   5. Blues */
+/*   6. Blues */
 .bg-cat-6-1,
-.bg-cat-6-1 > *:not([class*="bg-"]) {
+.bg-cat-6-1 > *:not([class*=bg-]) {
   background-color: #204a87;
-  border-color: #204a87; }
+  border-color: #204a87;
+}
 
 .bg-cat-6-2,
-.bg-cat-6-2 > *:not([class*="bg-"]) {
+.bg-cat-6-2 > *:not([class*=bg-]) {
   background-color: #3465a4;
-  border-color: #3465a4; }
+  border-color: #3465a4;
+}
 
 .bg-cat-6-3,
-.bg-cat-6-3 > *:not([class*="bg-"]) {
+.bg-cat-6-3 > *:not([class*=bg-]) {
   background-color: #729fcf;
-  border-color: #729fcf; }
+  border-color: #729fcf;
+}
 
-/*   6. Reds */
+/*   7. Reds */
 .bg-red-1,
-.bg-red-1 > *:not([class*="bg-"]) {
+.bg-red-1 > *:not([class*=bg-]) {
   background-color: #ef2929;
-  border-color: #ef2929; }
+  border-color: #ef2929;
+}
 
 .bg-red-2,
-.bg-red-2 > *:not([class*="bg-"]) {
+.bg-red-2 > *:not([class*=bg-]) {
   background-color: #cc0000;
-  border-color: #cc0000; }
+  border-color: #cc0000;
+}
 
 .bg-red-3,
-.bg-red-3 > *:not([class*="bg-"]) {
+.bg-red-3 > *:not([class*=bg-]) {
   background-color: #a40000;
-  border-color: #a40000; }
+  border-color: #a40000;
+}
 
 /* Grey levels for node background */
-.bg-grey-1,
-.bg-grey-1 > *:not([class*="bg-"]) {
+.bg-cat-8-1,
+.bg-grey-1 {
   background-color: #eeeeec;
-  border-color: #eeeeec; }
+  border-color: #eeeeec;
+}
 
-.bg-grey-2,
-.bg-grey-2 > *:not([class*="bg-"]) {
+.bg-cat-8-2,
+.bg-grey-2 {
   background-color: #d3d7cf;
-  border-color: #d3d7cf; }
+  border-color: #d3d7cf;
+}
 
-.bg-grey-3,
-.bg-grey-3 > *:not([class*="bg-"]) {
+.bg-cat-8-3,
+.bg-grey-3 {
   background-color: #babdb6;
-  border-color: #babdb6; }
+  border-color: #babdb6;
+}
 
-.bg-grey-4,
-.bg-grey-4 > *:not([class*="bg-"]) {
+.bg-cat-8-4,
+.bg-grey-4 {
   background-color: #888a85;
-  border-color: #888a85; }
+  border-color: #888a85;
+}
 
-.bg-grey-5,
-.bg-grey-5 > *:not([class*="bg-"]) {
+.bg-cat-8-5,
+.bg-grey-5 {
   background-color: #555753;
-  border-color: #555753; }
+  border-color: #555753;
+}
 
-.bg-grey-6,
-.bg-grey-6 > *:not([class*="bg-"]) {
+.bg-cat-8-6,
+.bg-grey-6 {
   background-color: #2e3436;
-  border-color: #2e3436; }
+  border-color: #2e3436;
+}
+
+.bg-black {
+  background-color: black;
+}
 
 /* Colors for Text */
 /*   1. Oranges */
 .text-1-1 {
-  color: #fcaf3e; }
+  color: #fcaf3e;
+}
 
 .text-1-2 {
-  color: #f57900; }
+  color: #f57900;
+}
 
 .text-1-3 {
-  color: #ce5c00; }
+  color: #ce5c00;
+}
 
 /*   2. Creme browns (Tango choco) */
 .text-2-1 {
-  color: #8f5902; }
+  color: #8f5902;
+}
 
 .text-2-2 {
-  color: #c17d11; }
+  color: #c17d11;
+}
 
 .text-2-3 {
-  color: #e9b96e; }
+  color: #e9b96e;
+}
 
 /*   3. Greens */
 .text-3-1 {
-  color: #4e9a06; }
+  color: #4e9a06;
+}
 
 .text-3-2 {
-  color: #73d216; }
+  color: #73d216;
+}
 
 .text-3-3 {
-  color: #8ae234; }
+  color: #8ae234;
+}
 
 /*   4. Purples */
 .text-4-1 {
-  color: #ad7fa8; }
+  color: #ad7fa8;
+}
 
 .text-4-2 {
-  color: #75507b; }
+  color: #75507b;
+}
 
 .text-4-3 {
-  color: #5c3566; }
+  color: #5c3566;
+}
 
 /*   5. Yellow browns */
 .text-5-1 {
-  color: #c4a000; }
+  color: #c4a000;
+}
 
 .text-5-2 {
-  color: #edd400; }
+  color: #edd400;
+}
 
 .text-5-3 {
-  color: #fce94f; }
+  color: #fce94f;
+}
 
-/*   5. Blues */
+/*   6. Blues */
 .text-6-1 {
-  color: #204a87; }
+  color: #204a87;
+}
 
 .text-6-2 {
-  color: #3465a4; }
+  color: #3465a4;
+}
 
 .text-6-3 {
-  color: #729fcf; }
+  color: #729fcf;
+}
 
-/*   6. Reds */
+/*   7. Reds */
+.text-7-1,
 .text-red-1 {
-  color: #a40000; }
+  color: #a40000;
+}
 
+.text-7-2,
 .text-red-2 {
-  color: #cc0000; }
+  color: #cc0000;
+}
 
+.text-7-3,
 .text-red-3 {
-  color: #ef2929; }
+  color: #ef2929;
+}
 
 /* Grey levels for text */
+.text-8-1,
 .text-grey-1 {
-  color: #eeeeec; }
+  color: #eeeeec;
+}
 
+.text-8-2,
 .text-grey-2 {
-  color: #d3d7cf; }
+  color: #d3d7cf;
+}
 
+.text-8-3,
 .text-grey-3 {
-  color: #babdb6; }
+  color: #babdb6;
+}
 
+.text-8-4,
 .text-grey-4 {
-  color: #888a85; }
+  color: #888a85;
+}
 
+.text-8-5,
 .text-grey-5 {
-  color: #555753; }
+  color: #555753;
+}
 
+.text-8-6,
 .text-grey-6 {
-  color: #2e3436; }
+  color: #2e3436;
+}
 
-.content > .wrapper > #hnav .title {
-  color: #fce94f; }
+/* Colors for borders */
+/*   1. Oranges */
+.border-1-1 {
+  border-color: #fcaf3e;
+}
 
-.content > .wrapper > #hnav a.reference {
-  color: #ad7fa8;
-  display: inline; }
+.border-1-2 {
+  border-color: #f57900;
+}
 
-.content > .wrapper > #hnav p cite {
+.border-1-3 {
+  border-color: #ce5c00;
+}
+
+/*   2. Creme browns (Tango choco) */
+.border-2-1 {
+  border-color: #8f5902;
+}
+
+.border-2-2 {
+  border-color: #c17d11;
+}
+
+.border-2-3 {
+  border-color: #e9b96e;
+}
+
+/*   3. Greens */
+.border-3-1 {
+  border-color: #4e9a06;
+}
+
+.border-3-2 {
+  border-color: #73d216;
+}
+
+.border-3-3 {
+  border-color: #8ae234;
+}
+
+/*   4. Purples */
+.border-4-1 {
+  border-color: #ad7fa8;
+}
+
+.border-4-2 {
+  border-color: #75507b;
+}
+
+.border-4-3 {
+  border-color: #5c3566;
+}
+
+/*   5. Yellow browns */
+.border-5-1 {
+  border-color: #c4a000;
+}
+
+.border-5-2 {
+  border-color: #edd400;
+}
+
+.border-5-3 {
+  border-color: #fce94f;
+}
+
+/*   6. Blues */
+.border-6-1 {
+  border-color: #204a87;
+}
+
+.border-6-2 {
+  border-color: #3465a4;
+}
+
+.border-6-3 {
+  border-color: #729fcf;
+}
+
+/*   7. Reds */
+.border-7-1,
+.border-red-1 {
+  border-color: #a40000;
+}
+
+.border-7-2,
+.border-red-2 {
+  border-color: #cc0000;
+}
+
+.border-7-3,
+.border-red-3 {
+  border-color: #ef2929;
+}
+
+/* Grey levels for border */
+.border-8-1,
+.border-grey-1 {
+  border-color: #eeeeec;
+}
+
+.border-8-2,
+.border-grey-2 {
+  border-color: #d3d7cf;
+}
+
+.border-8-3,
+.border-grey-3 {
+  border-color: #babdb6;
+}
+
+.border-8-4,
+.border-grey-4 {
+  border-color: #888a85;
+}
+
+.border-8-5,
+.border-grey-5 {
+  border-color: #555753;
+}
+
+.border-8-6,
+.border-grey-6 {
+  border-color: #2e3436;
+}
+
+.nobutton {
+  cursor: auto;
+}
+
+/* Flex v/h and pane */
+.flex, .flexh > .flexch, .flexv > .flexcv {
+  flex: 1;
+}
+
+.flexbox, .flexh, .flexv {
+  display: flex;
+}
+
+.flexv {
+  flex-direction: column;
+}
+.flexh {
+  flex-direction: row;
+}
+.pane, .rootpane, .ok-diagram {
+  box-sizing: border-box;
+  height: 100%;
+  overflow: scroll;
+  width: 100%;
+}
+.pane > *, .rootpane > *, .ok-diagram > * {
+  box-sizing: border-box;
+  margin-right: 0.6rem;
+  margin-left: 0.2rem;
+}
+
+.rootpane, .ok-diagram {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+/* Core LCARS SCSS for all elements */
+:root {
+  --font-size: 16.0pt;
+  --font-factor: 0.6;
+  --label-size: 15pt;
+  --bar-size: var(--bar-height);
+  --bar-height: calc( var(--font-size) * 1.1299 );
+  --bar-radius: calc( var(--bar-height) / 2 );
+  --bar-length: calc( var(--font-size) * 1.1299 );
+  --bar-min-width: 0px;
+  --bar-margin: 3.0pt;
+  --bar-padding-h: 0.0pt;
+  --bar-padding-v: 0.0pt;
+  --bar-margin-h: var(--bar-margin);
+  --bar-margin-v: var(--bar-margin);
+  --bar-inner-margin: 3.75pt;
+  --inner-bar-length: 0px;
+  --column-width: 144pt;
+  --radius-width-ratio: 0.36;
+  --outer-radius: calc( var(--column-width) * var(--radius-width-ratio) );
+  --inner-radius: calc( var(--outer-radius) + var(--bar-height) );
+  --content-padding: calc( var(--outer-radius)/1.7 - var(--bar-height) );
+  --font-size-xxxsmall: calc( var(--font-size) * 0.4096 );
+  --bar-margin-v-xxxsmall: calc( var(--bar-margin-v) * 0.4096 );
+  --bar-margin-h-xxxsmall: calc( var(--bar-margin-h) * 0.4096 );
+  --font-size-xxsmall: calc( var(--font-size) * 0.512 );
+  --bar-margin-v-xxsmall: calc( var(--bar-margin-v) * 0.512 );
+  --bar-margin-h-xxsmall: calc( var(--bar-margin-h) * 0.512 );
+  --font-size-xsmall: calc( var(--font-size) * 0.64 );
+  --bar-margin-v-xsmall: calc( var(--bar-margin-v) * 0.64 );
+  --bar-margin-h-xsmall: calc( var(--bar-margin-h) * 0.64 );
+  --font-size-small: calc( var(--font-size) * 0.8 );
+  --bar-margin-v-small: calc( var(--bar-margin-v) * 0.8 );
+  --bar-margin-h-small: calc( var(--bar-margin-h) * 0.8 );
+  --font-size-regular: calc( var(--font-size) * 1 );
+  --bar-margin-v-regular: calc( var(--bar-margin-v) * 1 );
+  --bar-margin-h-regular: calc( var(--bar-margin-h) * 1 );
+  --font-size-large: calc( var(--font-size) * 1.3333333333 );
+  --bar-margin-v-large: calc( var(--bar-margin-v) * 1.3333333333 );
+  --bar-margin-h-large: calc( var(--bar-margin-h) * 1.3333333333 );
+  --font-size-xlarge: calc( var(--font-size) * 1.7777777778 );
+  --bar-margin-v-xlarge: calc( var(--bar-margin-v) * 1.7777777778 );
+  --bar-margin-h-xlarge: calc( var(--bar-margin-h) * 1.7777777778 );
+  --font-size-xxlarge: calc( var(--font-size) * 2.3703703704 );
+  --bar-margin-v-xxlarge: calc( var(--bar-margin-v) * 2.3703703704 );
+  --bar-margin-h-xxlarge: calc( var(--bar-margin-h) * 2.3703703704 );
+  --font-size-xxxlarge: calc( var(--font-size) * 3.1604938272 );
+  --bar-margin-v-xxxlarge: calc( var(--bar-margin-v) * 3.1604938272 );
+  --bar-margin-h-xxxlarge: calc( var(--bar-margin-h) * 3.1604938272 );
+  --font-size-xxxxlarge: calc( var(--font-size) * 4.2139917695 );
+  --bar-margin-v-xxxxlarge: calc( var(--bar-margin-v) * 4.2139917695 );
+  --bar-margin-h-xxxxlarge: calc( var(--bar-margin-h) * 4.2139917695 );
+  --font-size-xxxxxlarge: calc( var(--font-size) * 5.6186556927 );
+  --bar-margin-v-xxxxxlarge: calc( var(--bar-margin-v) * 5.6186556927 );
+  --bar-margin-h-xxxxxlarge: calc( var(--bar-margin-h) * 5.6186556927 );
+  --font-size-medium: var(--font-size-regular);
+  --font-size-tiny: var(--font-size-xxxsmall);
+  --line-height-medium: var(--line-height-regular);
+  --line-height-tiny: var(--line-height-xxxsmall);
+}
+
+/* ok-diagram: OK Diagram root content pane */
+.ok-diagram {
+  font-size: var(--font-size);
+  background-color: black;
+  font-family: "LCARS";
+  font-weight: inherit;
+  text-transform: inherit;
+  letter-spacing: -0.8pt;
+  vertical-align: baseline;
+  border-style: none;
+  outline: none;
+}
+.ok-diagram .swiss911ultra {
+  font-family: "Swiss 911 Ultra Compressed BT";
+  letter-spacing: normal;
+}
+.ok-diagram .swiss911extra {
+  font-family: "Swiss 911 Extra Compressed BT";
+  letter-spacing: normal;
+}
+.ok-diagram * {
+  text-transform: uppercase;
+  font-family: inherit;
+}
+.ok-diagram .justified {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.ok-diagram .regularcase {
+  text-transform: initial;
+}
+.ok-diagram .title {
+  text-transform: uppercase;
+  color: white;
+}
+.ok-diagram .title.altcolor {
+  color: #fce94f;
+}
+.ok-diagram a:hover {
+  text-decoration: none;
+}
+.ok-diagram input {
+  font-family: inherit;
+  font-size: inherit;
+}
+.ok-diagram hr {
+  border-width: thick;
+}
+.ok-diagram__text--tiny, .ok-diagram__text.tiny,
+.ok-diagram .text--tiny,
+.ok-diagram .text.tiny {
+  font-size: var(--font-size-tiny);
+}
+.ok-diagram__text--xxxsmall, .ok-diagram__text.xxxsmall,
+.ok-diagram .text--xxxsmall,
+.ok-diagram .text.xxxsmall {
+  font-size: var(--font-size-xxxsmall);
+}
+.ok-diagram__text--xxsmall, .ok-diagram__text.xxsmall,
+.ok-diagram .text--xxsmall,
+.ok-diagram .text.xxsmall {
+  font-size: var(--font-size-xxsmall);
+}
+.ok-diagram__text--xsmall, .ok-diagram__text.xsmall,
+.ok-diagram .text--xsmall,
+.ok-diagram .text.xsmall {
+  font-size: var(--font-size-xsmall);
+}
+.ok-diagram__text--small, .ok-diagram__text.small,
+.ok-diagram .text--small,
+.ok-diagram .text.small {
+  font-size: var(--font-size-small);
+}
+.ok-diagram__text--medium, .ok-diagram__text.medium,
+.ok-diagram .text--medium,
+.ok-diagram .text.medium {
+  font-size: var(--font-size-medium);
+}
+.ok-diagram__text--regular, .ok-diagram__text,
+.ok-diagram .text, .ok-diagram__text.regular,
+.ok-diagram .text--regular,
+.ok-diagram .text.regular {
+  font-size: var(--font-size-regular);
+}
+.ok-diagram__text--large, .ok-diagram__text.large,
+.ok-diagram .text--large,
+.ok-diagram .text.large {
+  font-size: var(--font-size-large);
+}
+.ok-diagram__text--xlarge, .ok-diagram__text.xlarge,
+.ok-diagram .text--xlarge,
+.ok-diagram .text.xlarge {
+  font-size: var(--font-size-xlarge);
+}
+.ok-diagram__text--xxlarge, .ok-diagram__text.xxlarge,
+.ok-diagram .text--xxlarge,
+.ok-diagram .text.xxlarge {
+  font-size: var(--font-size-xxlarge);
+}
+.ok-diagram__text--xxxlarge, .ok-diagram__text.xxxlarge,
+.ok-diagram .text--xxxlarge,
+.ok-diagram .text.xxxlarge {
+  font-size: var(--font-size-xxxlarge);
+}
+.ok-diagram__text--xxxxlarge, .ok-diagram__text.xxxxlarge,
+.ok-diagram .text--xxxxlarge,
+.ok-diagram .text.xxxxlarge {
+  font-size: var(--font-size-xxxxlarge);
+}
+.ok-diagram__text--xxxxxlarge, .ok-diagram__text.xxxxxlarge,
+.ok-diagram .text--xxxxxlarge,
+.ok-diagram .text.xxxxxlarge {
+  font-size: var(--font-size-xxxxxlarge);
+}
+/* ok-dia__span: an inline (sized to content-model) bar variant */
+.ok-dia__span[data-label]:before, .ok-diagram [data-label].span:before {
+  content: attr(data-label);
+  color: black;
+}
+.ok-dia__span[data-alt-label]:after, .ok-diagram [data-alt-label].span:after {
+  content: attr(data-alt-label);
+  color: black;
+}
+.ok-dia__span--xxxsmall, .ok-dia__inline-button--tiny, .ok-diagram .spanbutton.tiny,
+.ok-diagram button.tiny, .ok-dia__inline-button.tiny, .ok-dia__span__capright--xxxsmall, .ok-dia__span__pill--xxxsmall, .ok-diagram .spanpill.xxxsmall, .ok-dia__span__pill.xxxsmall, .ok-dia__span__capright--tiny, .ok-dia__span__pill--tiny, .ok-diagram .spanpill.tiny, .ok-dia__span__pill.tiny, .ok-diagram .spancap.right.tiny, .ok-dia__span__capright.tiny, .ok-diagram .spancap.right.xxxsmall, .ok-dia__span__capright.xxxsmall, .ok-dia__span__capleft--xxxsmall, .ok-dia__span__capleft--tiny, .ok-diagram .spancap.left.tiny, .ok-dia__span__capleft.tiny, .ok-diagram .spancap.left.xxxsmall, .ok-dia__span__capleft.xxxsmall, .ok-dia__span--tiny, .ok-diagram .span.tiny, .ok-dia__span.tiny, .ok-diagram .span.xxxsmall, .ok-dia__span.xxxsmall {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
   display: inline;
-  margin: auto 7px; }
+  /* Inline "block" span size 'xxxsmall' */
+  font-size: calc( var(--font-size-xxxsmall) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 0.4096 );
+}
+.ok-dia__span--xxxsmall:before, .ok-dia__inline-button--tiny:before, .ok-diagram .spanbutton.tiny:before,
+.ok-diagram button.tiny:before, .ok-dia__inline-button.tiny:before, .ok-dia__span__capright--xxxsmall:before, .ok-dia__span__pill--xxxsmall:before, .ok-diagram .spanpill.xxxsmall:before, .ok-dia__span__pill.xxxsmall:before, .ok-dia__span__capright--tiny:before, .ok-dia__span__pill--tiny:before, .ok-diagram .spanpill.tiny:before, .ok-dia__span__pill.tiny:before, .ok-diagram .spancap.right.tiny:before, .ok-dia__span__capright.tiny:before, .ok-diagram .spancap.right.xxxsmall:before, .ok-dia__span__capright.xxxsmall:before, .ok-dia__span__capleft--xxxsmall:before, .ok-dia__span__capleft--tiny:before, .ok-diagram .spancap.left.tiny:before, .ok-dia__span__capleft.tiny:before, .ok-diagram .spancap.left.xxxsmall:before, .ok-dia__span__capleft.xxxsmall:before, .ok-dia__span--tiny:before, .ok-diagram .span.tiny:before, .ok-dia__span.tiny:before, .ok-diagram .span.xxxsmall:before, .ok-dia__span.xxxsmall:before {
+  content: "  ";
+}
+.ok-dia__span--xxsmall, .ok-dia__span__capright--xxsmall, .ok-dia__span__pill--xxsmall, .ok-diagram .spanpill.xxsmall, .ok-dia__span__pill.xxsmall, .ok-diagram .spancap.right.xxsmall, .ok-dia__span__capright.xxsmall, .ok-dia__span__capleft--xxsmall, .ok-diagram .spancap.left.xxsmall, .ok-dia__span__capleft.xxsmall, .ok-diagram .span.xxsmall, .ok-dia__span.xxsmall {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xxsmall' */
+  font-size: calc( var(--font-size-xxsmall) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 0.512 );
+}
+.ok-dia__span--xxsmall:before, .ok-dia__span__capright--xxsmall:before, .ok-dia__span__pill--xxsmall:before, .ok-diagram .spanpill.xxsmall:before, .ok-dia__span__pill.xxsmall:before, .ok-diagram .spancap.right.xxsmall:before, .ok-dia__span__capright.xxsmall:before, .ok-dia__span__capleft--xxsmall:before, .ok-diagram .spancap.left.xxsmall:before, .ok-dia__span__capleft.xxsmall:before, .ok-diagram .span.xxsmall:before, .ok-dia__span.xxsmall:before {
+  content: "  ";
+}
+.ok-dia__span--xsmall, .ok-dia__span__capright--xsmall, .ok-dia__span__pill--xsmall, .ok-diagram .spanpill.xsmall, .ok-dia__span__pill.xsmall, .ok-diagram .spancap.right.xsmall, .ok-dia__span__capright.xsmall, .ok-dia__span__capleft--xsmall, .ok-diagram .spancap.left.xsmall, .ok-dia__span__capleft.xsmall, .ok-diagram .span.xsmall, .ok-dia__span.xsmall {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xsmall' */
+  font-size: calc( var(--font-size-xsmall) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 0.64 );
+}
+.ok-dia__span--xsmall:before, .ok-dia__span__capright--xsmall:before, .ok-dia__span__pill--xsmall:before, .ok-diagram .spanpill.xsmall:before, .ok-dia__span__pill.xsmall:before, .ok-diagram .spancap.right.xsmall:before, .ok-dia__span__capright.xsmall:before, .ok-dia__span__capleft--xsmall:before, .ok-diagram .spancap.left.xsmall:before, .ok-dia__span__capleft.xsmall:before, .ok-diagram .span.xsmall:before, .ok-dia__span.xsmall:before {
+  content: "  ";
+}
+.ok-dia__span--small, .ok-dia__span__capright--small, .ok-dia__span__pill--small, .ok-diagram .spanpill.small, .ok-dia__span__pill.small, .ok-diagram .spancap.right.small, .ok-dia__span__capright.small, .ok-dia__span__capleft--small, .ok-diagram .spancap.left.small, .ok-dia__span__capleft.small, .ok-diagram .span.small, .ok-dia__span.small {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'small' */
+  font-size: calc( var(--font-size-small) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 0.8 );
+}
+.ok-dia__span--small:before, .ok-dia__span__capright--small:before, .ok-dia__span__pill--small:before, .ok-diagram .spanpill.small:before, .ok-dia__span__pill.small:before, .ok-diagram .spancap.right.small:before, .ok-dia__span__capright.small:before, .ok-dia__span__capleft--small:before, .ok-diagram .spancap.left.small:before, .ok-dia__span__capleft.small:before, .ok-diagram .span.small:before, .ok-dia__span.small:before {
+  content: "  ";
+}
+.ok-dia__span--regular, .ok-dia__inline-button, .ok-diagram .spanbutton,
+.ok-diagram button, .ok-dia__inline-button--medium, .ok-diagram .spanbutton.medium,
+.ok-diagram button.medium, .ok-dia__inline-button.medium, .ok-dia__span__capright--regular, .ok-dia__span__pill--regular, .ok-dia__span__pill, .ok-diagram .spanpill.regular, .ok-diagram .spanpill, .ok-dia__span__pill.regular, .ok-dia__span__capright, .ok-dia__span__capright--medium, .ok-dia__span__pill--medium, .ok-diagram .spanpill.medium, .ok-dia__span__pill.medium, .ok-diagram .spancap.right.medium, .ok-dia__span__capright.medium, .ok-diagram .spancap.right.regular, .ok-diagram .spancap.right, .ok-dia__span__capright.regular, .ok-dia__span__capleft--regular, .ok-diagram .spanpill, .ok-dia__span__capleft, .ok-dia__span__capleft--medium, .ok-diagram .spancap.left.medium, .ok-dia__span__capleft.medium, .ok-diagram .spancap.left.regular, .ok-diagram .spancap.left, .ok-dia__span__capleft.regular, .ok-dia__span, .ok-dia__span--medium, .ok-diagram .span.medium, .ok-dia__span.medium, .ok-diagram .span.regular, .ok-diagram .span, .ok-dia__span.regular {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'regular' */
+  font-size: calc( var(--font-size-regular) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 1 );
+}
+.ok-dia__span--regular:before, .ok-dia__inline-button:before, .ok-diagram .spanbutton:before,
+.ok-diagram button:before, .ok-dia__inline-button--medium:before, .ok-diagram .spanbutton.medium:before,
+.ok-diagram button.medium:before, .ok-dia__inline-button.medium:before, .ok-dia__span__capright--regular:before, .ok-dia__span__pill--regular:before, .ok-dia__span__pill:before, .ok-diagram .spanpill.regular:before, .ok-diagram .spanpill:before, .ok-dia__span__pill.regular:before, .ok-dia__span__capright:before, .ok-dia__span__capright--medium:before, .ok-dia__span__pill--medium:before, .ok-diagram .spanpill.medium:before, .ok-dia__span__pill.medium:before, .ok-diagram .spancap.right.medium:before, .ok-dia__span__capright.medium:before, .ok-diagram .spancap.right.regular:before, .ok-diagram .spancap.right:before, .ok-dia__span__capright.regular:before, .ok-dia__span__capleft--regular:before, .ok-diagram .spanpill:before, .ok-dia__span__capleft:before, .ok-dia__span__capleft--medium:before, .ok-diagram .spancap.left.medium:before, .ok-dia__span__capleft.medium:before, .ok-diagram .spancap.left.regular:before, .ok-diagram .spancap.left:before, .ok-dia__span__capleft.regular:before, .ok-dia__span:before, .ok-dia__span--medium:before, .ok-diagram .span.medium:before, .ok-dia__span.medium:before, .ok-diagram .span.regular:before, .ok-diagram .span:before, .ok-dia__span.regular:before {
+  content: "  ";
+}
+.ok-dia__span--large, .ok-dia__span__capright--large, .ok-dia__span__pill--large, .ok-diagram .spanpill.large, .ok-dia__span__pill.large, .ok-diagram .spancap.right.large, .ok-dia__span__capright.large, .ok-dia__span__capleft--large, .ok-diagram .spancap.left.large, .ok-dia__span__capleft.large, .ok-diagram .span.large, .ok-dia__span.large {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'large' */
+  font-size: calc( var(--font-size-large) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 1.3333333333 );
+}
+.ok-dia__span--large:before, .ok-dia__span__capright--large:before, .ok-dia__span__pill--large:before, .ok-diagram .spanpill.large:before, .ok-dia__span__pill.large:before, .ok-diagram .spancap.right.large:before, .ok-dia__span__capright.large:before, .ok-dia__span__capleft--large:before, .ok-diagram .spancap.left.large:before, .ok-dia__span__capleft.large:before, .ok-diagram .span.large:before, .ok-dia__span.large:before {
+  content: "  ";
+}
+.ok-dia__span--xlarge, .ok-dia__span__capright--xlarge, .ok-dia__span__pill--xlarge, .ok-diagram .spanpill.xlarge, .ok-dia__span__pill.xlarge, .ok-diagram .spancap.right.xlarge, .ok-dia__span__capright.xlarge, .ok-dia__span__capleft--xlarge, .ok-diagram .spancap.left.xlarge, .ok-dia__span__capleft.xlarge, .ok-diagram .span.xlarge, .ok-dia__span.xlarge {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xlarge' */
+  font-size: calc( var(--font-size-xlarge) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 1.7777777778 );
+}
+.ok-dia__span--xlarge:before, .ok-dia__span__capright--xlarge:before, .ok-dia__span__pill--xlarge:before, .ok-diagram .spanpill.xlarge:before, .ok-dia__span__pill.xlarge:before, .ok-diagram .spancap.right.xlarge:before, .ok-dia__span__capright.xlarge:before, .ok-dia__span__capleft--xlarge:before, .ok-diagram .spancap.left.xlarge:before, .ok-dia__span__capleft.xlarge:before, .ok-diagram .span.xlarge:before, .ok-dia__span.xlarge:before {
+  content: "  ";
+}
+.ok-dia__span--xxlarge, .ok-dia__span__capright--xxlarge, .ok-dia__span__pill--xxlarge, .ok-diagram .spanpill.xxlarge, .ok-dia__span__pill.xxlarge, .ok-diagram .spancap.right.xxlarge, .ok-dia__span__capright.xxlarge, .ok-dia__span__capleft--xxlarge, .ok-diagram .spancap.left.xxlarge, .ok-dia__span__capleft.xxlarge, .ok-diagram .span.xxlarge, .ok-dia__span.xxlarge {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xxlarge' */
+  font-size: calc( var(--font-size-xxlarge) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 2.3703703704 );
+}
+.ok-dia__span--xxlarge:before, .ok-dia__span__capright--xxlarge:before, .ok-dia__span__pill--xxlarge:before, .ok-diagram .spanpill.xxlarge:before, .ok-dia__span__pill.xxlarge:before, .ok-diagram .spancap.right.xxlarge:before, .ok-dia__span__capright.xxlarge:before, .ok-dia__span__capleft--xxlarge:before, .ok-diagram .spancap.left.xxlarge:before, .ok-dia__span__capleft.xxlarge:before, .ok-diagram .span.xxlarge:before, .ok-dia__span.xxlarge:before {
+  content: "  ";
+}
+.ok-dia__span--xxxlarge, .ok-dia__span__capright--xxxlarge, .ok-dia__span__pill--xxxlarge, .ok-diagram .spanpill.xxxlarge, .ok-dia__span__pill.xxxlarge, .ok-diagram .spancap.right.xxxlarge, .ok-dia__span__capright.xxxlarge, .ok-dia__span__capleft--xxxlarge, .ok-diagram .spancap.left.xxxlarge, .ok-dia__span__capleft.xxxlarge, .ok-diagram .span.xxxlarge, .ok-dia__span.xxxlarge {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xxxlarge' */
+  font-size: calc( var(--font-size-xxxlarge) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 3.1604938272 );
+}
+.ok-dia__span--xxxlarge:before, .ok-dia__span__capright--xxxlarge:before, .ok-dia__span__pill--xxxlarge:before, .ok-diagram .spanpill.xxxlarge:before, .ok-dia__span__pill.xxxlarge:before, .ok-diagram .spancap.right.xxxlarge:before, .ok-dia__span__capright.xxxlarge:before, .ok-dia__span__capleft--xxxlarge:before, .ok-diagram .spancap.left.xxxlarge:before, .ok-dia__span__capleft.xxxlarge:before, .ok-diagram .span.xxxlarge:before, .ok-dia__span.xxxlarge:before {
+  content: "  ";
+}
+.ok-dia__span--xxxxlarge, .ok-dia__span__capright--xxxxlarge, .ok-dia__span__pill--xxxxlarge, .ok-diagram .spanpill.xxxxlarge, .ok-dia__span__pill.xxxxlarge, .ok-diagram .spancap.right.xxxxlarge, .ok-dia__span__capright.xxxxlarge, .ok-dia__span__capleft--xxxxlarge, .ok-diagram .spancap.left.xxxxlarge, .ok-dia__span__capleft.xxxxlarge, .ok-diagram .span.xxxxlarge, .ok-dia__span.xxxxlarge {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xxxxlarge' */
+  font-size: calc( var(--font-size-xxxxlarge) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 4.2139917695 );
+}
+.ok-dia__span--xxxxlarge:before, .ok-dia__span__capright--xxxxlarge:before, .ok-dia__span__pill--xxxxlarge:before, .ok-diagram .spanpill.xxxxlarge:before, .ok-dia__span__pill.xxxxlarge:before, .ok-diagram .spancap.right.xxxxlarge:before, .ok-dia__span__capright.xxxxlarge:before, .ok-dia__span__capleft--xxxxlarge:before, .ok-diagram .spancap.left.xxxxlarge:before, .ok-dia__span__capleft.xxxxlarge:before, .ok-diagram .span.xxxxlarge:before, .ok-dia__span.xxxxlarge:before {
+  content: "  ";
+}
+.ok-dia__span--xxxxxlarge, .ok-dia__span__capright--xxxxxlarge, .ok-dia__span__pill--xxxxxlarge, .ok-diagram .spanpill.xxxxxlarge, .ok-dia__span__pill.xxxxxlarge, .ok-diagram .spancap.right.xxxxxlarge, .ok-dia__span__capright.xxxxxlarge, .ok-dia__span__capleft--xxxxxlarge, .ok-diagram .spancap.left.xxxxxlarge, .ok-dia__span__capleft.xxxxxlarge, .ok-diagram .span.xxxxxlarge, .ok-dia__span.xxxxxlarge {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xxxxxlarge' */
+  font-size: calc( var(--font-size-xxxxxlarge) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 5.6186556927 );
+}
+.ok-dia__span--xxxxxlarge:before, .ok-dia__span__capright--xxxxxlarge:before, .ok-dia__span__pill--xxxxxlarge:before, .ok-diagram .spanpill.xxxxxlarge:before, .ok-dia__span__pill.xxxxxlarge:before, .ok-diagram .spancap.right.xxxxxlarge:before, .ok-dia__span__capright.xxxxxlarge:before, .ok-dia__span__capleft--xxxxxlarge:before, .ok-diagram .spancap.left.xxxxxlarge:before, .ok-dia__span__capleft.xxxxxlarge:before, .ok-diagram .span.xxxxxlarge:before, .ok-dia__span.xxxxxlarge:before {
+  content: "  ";
+}
+.ok-dia__span__capleft--xxxsmall, .ok-dia__span__pill--xxxsmall, .ok-diagram .spanpill.xxxsmall, .ok-dia__span__pill.xxxsmall, .ok-dia__span__capleft--tiny, .ok-dia__span__pill--tiny, .ok-diagram .spanpill.tiny, .ok-dia__span__pill.tiny, .ok-diagram .spancap.left.tiny, .ok-dia__span__capleft.tiny, .ok-diagram .spancap.left.xxxsmall, .ok-dia__span__capleft.xxxsmall {
+  border-top-left-radius: calc( var(--bar-radius) * 0.4096 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 0.4096 );
+  padding-left: calc( var(--bar-radius) * 0.4096 );
+}
+.ok-dia__span__capleft--xxsmall, .ok-dia__span__pill--xxsmall, .ok-diagram .spanpill.xxsmall, .ok-dia__span__pill.xxsmall, .ok-diagram .spancap.left.xxsmall, .ok-dia__span__capleft.xxsmall {
+  border-top-left-radius: calc( var(--bar-radius) * 0.512 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 0.512 );
+  padding-left: calc( var(--bar-radius) * 0.512 );
+}
+.ok-dia__span__capleft--xsmall, .ok-dia__span__pill--xsmall, .ok-diagram .spanpill.xsmall, .ok-dia__span__pill.xsmall, .ok-diagram .spancap.left.xsmall, .ok-dia__span__capleft.xsmall {
+  border-top-left-radius: calc( var(--bar-radius) * 0.64 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 0.64 );
+  padding-left: calc( var(--bar-radius) * 0.64 );
+}
+.ok-dia__span__capleft--small, .ok-dia__span__pill--small, .ok-diagram .spanpill.small, .ok-dia__span__pill.small, .ok-diagram .spancap.left.small, .ok-dia__span__capleft.small {
+  border-top-left-radius: calc( var(--bar-radius) * 0.8 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 0.8 );
+  padding-left: calc( var(--bar-radius) * 0.8 );
+}
+.ok-dia__span__capleft--regular, .ok-dia__span__pill--regular, .ok-dia__span__pill, .ok-diagram .spanpill.regular, .ok-diagram .spanpill, .ok-dia__span__pill.regular, .ok-dia__span__capleft, .ok-dia__span__capleft--medium, .ok-dia__span__pill--medium, .ok-diagram .spanpill.medium, .ok-dia__span__pill.medium, .ok-diagram .spancap.left.medium, .ok-dia__span__capleft.medium, .ok-diagram .spancap.left.regular, .ok-diagram .spancap.left, .ok-dia__span__capleft.regular {
+  border-top-left-radius: calc( var(--bar-radius) * 1 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 1 );
+  padding-left: calc( var(--bar-radius) * 1 );
+}
+.ok-dia__span__capleft--large, .ok-dia__span__pill--large, .ok-diagram .spanpill.large, .ok-dia__span__pill.large, .ok-diagram .spancap.left.large, .ok-dia__span__capleft.large {
+  border-top-left-radius: calc( var(--bar-radius) * 1.3333333333 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 1.3333333333 );
+  padding-left: calc( var(--bar-radius) * 1.3333333333 );
+}
+.ok-dia__span__capleft--xlarge, .ok-dia__span__pill--xlarge, .ok-diagram .spanpill.xlarge, .ok-dia__span__pill.xlarge, .ok-diagram .spancap.left.xlarge, .ok-dia__span__capleft.xlarge {
+  border-top-left-radius: calc( var(--bar-radius) * 1.7777777778 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 1.7777777778 );
+  padding-left: calc( var(--bar-radius) * 1.7777777778 );
+}
+.ok-dia__span__capleft--xxlarge, .ok-dia__span__pill--xxlarge, .ok-diagram .spanpill.xxlarge, .ok-dia__span__pill.xxlarge, .ok-diagram .spancap.left.xxlarge, .ok-dia__span__capleft.xxlarge {
+  border-top-left-radius: calc( var(--bar-radius) * 2.3703703704 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 2.3703703704 );
+  padding-left: calc( var(--bar-radius) * 2.3703703704 );
+}
+.ok-dia__span__capleft--xxxlarge, .ok-dia__span__pill--xxxlarge, .ok-diagram .spanpill.xxxlarge, .ok-dia__span__pill.xxxlarge, .ok-diagram .spancap.left.xxxlarge, .ok-dia__span__capleft.xxxlarge {
+  border-top-left-radius: calc( var(--bar-radius) * 3.1604938272 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 3.1604938272 );
+  padding-left: calc( var(--bar-radius) * 3.1604938272 );
+}
+.ok-dia__span__capleft--xxxxlarge, .ok-dia__span__pill--xxxxlarge, .ok-diagram .spanpill.xxxxlarge, .ok-dia__span__pill.xxxxlarge, .ok-diagram .spancap.left.xxxxlarge, .ok-dia__span__capleft.xxxxlarge {
+  border-top-left-radius: calc( var(--bar-radius) * 4.2139917695 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 4.2139917695 );
+  padding-left: calc( var(--bar-radius) * 4.2139917695 );
+}
+.ok-dia__span__capleft--xxxxxlarge, .ok-dia__span__pill--xxxxxlarge, .ok-diagram .spanpill.xxxxxlarge, .ok-dia__span__pill.xxxxxlarge, .ok-diagram .spancap.left.xxxxxlarge, .ok-dia__span__capleft.xxxxxlarge {
+  border-top-left-radius: calc( var(--bar-radius) * 5.6186556927 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 5.6186556927 );
+  padding-left: calc( var(--bar-radius) * 5.6186556927 );
+}
+.ok-dia__span__capright--xxxsmall, .ok-dia__span__pill--xxxsmall, .ok-diagram .spanpill.xxxsmall, .ok-dia__span__pill.xxxsmall, .ok-dia__span__capright--tiny, .ok-dia__span__pill--tiny, .ok-diagram .spanpill.tiny, .ok-dia__span__pill.tiny, .ok-diagram .spancap.right.tiny, .ok-dia__span__capright.tiny, .ok-diagram .spancap.right.xxxsmall, .ok-dia__span__capright.xxxsmall {
+  border-top-right-radius: calc( var(--bar-radius) * 0.4096 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 0.4096 );
+  padding-right: calc( var(--bar-radius) * 0.4096 );
+}
+.ok-dia__span__capright--xxsmall, .ok-dia__span__pill--xxsmall, .ok-diagram .spanpill.xxsmall, .ok-dia__span__pill.xxsmall, .ok-diagram .spancap.right.xxsmall, .ok-dia__span__capright.xxsmall {
+  border-top-right-radius: calc( var(--bar-radius) * 0.512 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 0.512 );
+  padding-right: calc( var(--bar-radius) * 0.512 );
+}
+.ok-dia__span__capright--xsmall, .ok-dia__span__pill--xsmall, .ok-diagram .spanpill.xsmall, .ok-dia__span__pill.xsmall, .ok-diagram .spancap.right.xsmall, .ok-dia__span__capright.xsmall {
+  border-top-right-radius: calc( var(--bar-radius) * 0.64 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 0.64 );
+  padding-right: calc( var(--bar-radius) * 0.64 );
+}
+.ok-dia__span__capright--small, .ok-dia__span__pill--small, .ok-diagram .spanpill.small, .ok-dia__span__pill.small, .ok-diagram .spancap.right.small, .ok-dia__span__capright.small {
+  border-top-right-radius: calc( var(--bar-radius) * 0.8 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 0.8 );
+  padding-right: calc( var(--bar-radius) * 0.8 );
+}
+.ok-dia__span__capright--regular, .ok-dia__span__pill--regular, .ok-dia__span__pill, .ok-diagram .spanpill.regular, .ok-diagram .spanpill, .ok-dia__span__pill.regular, .ok-dia__span__capright, .ok-dia__span__capright--medium, .ok-dia__span__pill--medium, .ok-diagram .spanpill.medium, .ok-dia__span__pill.medium, .ok-diagram .spancap.right.medium, .ok-dia__span__capright.medium, .ok-diagram .spancap.right.regular, .ok-diagram .spancap.right, .ok-dia__span__capright.regular {
+  border-top-right-radius: calc( var(--bar-radius) * 1 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 1 );
+  padding-right: calc( var(--bar-radius) * 1 );
+}
+.ok-dia__span__capright--large, .ok-dia__span__pill--large, .ok-diagram .spanpill.large, .ok-dia__span__pill.large, .ok-diagram .spancap.right.large, .ok-dia__span__capright.large {
+  border-top-right-radius: calc( var(--bar-radius) * 1.3333333333 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 1.3333333333 );
+  padding-right: calc( var(--bar-radius) * 1.3333333333 );
+}
+.ok-dia__span__capright--xlarge, .ok-dia__span__pill--xlarge, .ok-diagram .spanpill.xlarge, .ok-dia__span__pill.xlarge, .ok-diagram .spancap.right.xlarge, .ok-dia__span__capright.xlarge {
+  border-top-right-radius: calc( var(--bar-radius) * 1.7777777778 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 1.7777777778 );
+  padding-right: calc( var(--bar-radius) * 1.7777777778 );
+}
+.ok-dia__span__capright--xxlarge, .ok-dia__span__pill--xxlarge, .ok-diagram .spanpill.xxlarge, .ok-dia__span__pill.xxlarge, .ok-diagram .spancap.right.xxlarge, .ok-dia__span__capright.xxlarge {
+  border-top-right-radius: calc( var(--bar-radius) * 2.3703703704 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 2.3703703704 );
+  padding-right: calc( var(--bar-radius) * 2.3703703704 );
+}
+.ok-dia__span__capright--xxxlarge, .ok-dia__span__pill--xxxlarge, .ok-diagram .spanpill.xxxlarge, .ok-dia__span__pill.xxxlarge, .ok-diagram .spancap.right.xxxlarge, .ok-dia__span__capright.xxxlarge {
+  border-top-right-radius: calc( var(--bar-radius) * 3.1604938272 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 3.1604938272 );
+  padding-right: calc( var(--bar-radius) * 3.1604938272 );
+}
+.ok-dia__span__capright--xxxxlarge, .ok-dia__span__pill--xxxxlarge, .ok-diagram .spanpill.xxxxlarge, .ok-dia__span__pill.xxxxlarge, .ok-diagram .spancap.right.xxxxlarge, .ok-dia__span__capright.xxxxlarge {
+  border-top-right-radius: calc( var(--bar-radius) * 4.2139917695 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 4.2139917695 );
+  padding-right: calc( var(--bar-radius) * 4.2139917695 );
+}
+.ok-dia__span__capright--xxxxxlarge, .ok-dia__span__pill--xxxxxlarge, .ok-diagram .spanpill.xxxxxlarge, .ok-dia__span__pill.xxxxxlarge, .ok-diagram .spancap.right.xxxxxlarge, .ok-dia__span__capright.xxxxxlarge {
+  border-top-right-radius: calc( var(--bar-radius) * 5.6186556927 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 5.6186556927 );
+  padding-right: calc( var(--bar-radius) * 5.6186556927 );
+}
+/* ok-dia__bar: an block (sized to flexbox-model) bar variant */
+.ok-dia__bar, input[type=range], .ok-diagram .bar {
+  --size-factor: 1;
+  height: calc( var(--bar-height) * var(--size-factor) );
+}
+.ok-dia__bar[data-label]:before, input[data-label][type=range]:before, .ok-diagram [data-label].bar:before {
+  content: attr(data-label);
+  color: black;
+}
+.ok-dia__bar[data-alt-label]:after, input[data-alt-label][type=range]:after, .ok-diagram [data-alt-label].bar:after {
+  content: attr(data-alt-label);
+  color: black;
+}
+.ok-dia__bar--xxxsmall, .ok-dia__button--tiny, .ok-diagram .button.tiny, .ok-dia__button.tiny, .ok-dia__bar__capright--xxxsmall, .ok-dia__bar__pill.xxxsmall, .ok-dia__bar__pill--xxxsmall, .ok-diagram .pill.xxxsmall, .ok-dia__bar__capright--tiny, .ok-dia__bar__pill.tiny, .ok-dia__bar__pill--tiny, .ok-diagram .pill.tiny, .ok-diagram .cap.right.tiny, .ok-dia__bar__capright.tiny, .ok-diagram .cap.right.xxxsmall, .ok-dia__bar__capright.xxxsmall, .ok-dia__bar__capleft--xxxsmall, .ok-dia__bar__capleft--tiny, .ok-diagram .cap.left.tiny, .ok-dia__bar__capleft.tiny, .ok-diagram .cap.left.xxxsmall, .ok-dia__bar__capleft.xxxsmall, .ok-dia__bar--tiny, .ok-diagram .bar.tiny, .ok-dia__bar.tiny, input.tiny[type=range], .ok-diagram .bar.xxxsmall, .ok-dia__bar.xxxsmall, input.xxxsmall[type=range] {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxxsmall' */
+  --size-factor: 0.4096;
+  vertical-align: -2.6pt;
+  font-size: calc( var(--font-size-xxxsmall) * var(--font-factor) );
+}
+.ok-dia__bar--xxxsmall:before, .ok-dia__button--tiny:before, .ok-diagram .button.tiny:before, .ok-dia__button.tiny:before, .ok-dia__bar__capright--xxxsmall:before, .ok-dia__bar__pill.xxxsmall:before, .ok-dia__bar__pill--xxxsmall:before, .ok-diagram .pill.xxxsmall:before, .ok-dia__bar__capright--tiny:before, .ok-dia__bar__pill.tiny:before, .ok-dia__bar__pill--tiny:before, .ok-diagram .pill.tiny:before, .ok-diagram .cap.right.tiny:before, .ok-dia__bar__capright.tiny:before, .ok-diagram .cap.right.xxxsmall:before, .ok-dia__bar__capright.xxxsmall:before, .ok-dia__bar__capleft--xxxsmall:before, .ok-dia__bar__capleft--tiny:before, .ok-diagram .cap.left.tiny:before, .ok-dia__bar__capleft.tiny:before, .ok-diagram .cap.left.xxxsmall:before, .ok-dia__bar__capleft.xxxsmall:before, .ok-dia__bar--tiny:before, .ok-diagram .bar.tiny:before, .ok-dia__bar.tiny:before, input.tiny[type=range]:before, .ok-diagram .bar.xxxsmall:before, .ok-dia__bar.xxxsmall:before, input.xxxsmall[type=range]:before {
+  content: "  ";
+}
+.ok-dia__bar--xxsmall, .ok-dia__bar__capright--xxsmall, .ok-dia__bar__pill.xxsmall, .ok-dia__bar__pill--xxsmall, .ok-diagram .pill.xxsmall, .ok-diagram .cap.right.xxsmall, .ok-dia__bar__capright.xxsmall, .ok-dia__bar__capleft--xxsmall, .ok-diagram .cap.left.xxsmall, .ok-dia__bar__capleft.xxsmall, .ok-diagram .bar.xxsmall, .ok-dia__bar.xxsmall, input.xxsmall[type=range] {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxsmall' */
+  --size-factor: 0.512;
+  vertical-align: -2pt;
+  font-size: calc( var(--font-size-xxsmall) * var(--font-factor) );
+}
+.ok-dia__bar--xxsmall:before, .ok-dia__bar__capright--xxsmall:before, .ok-dia__bar__pill.xxsmall:before, .ok-dia__bar__pill--xxsmall:before, .ok-diagram .pill.xxsmall:before, .ok-diagram .cap.right.xxsmall:before, .ok-dia__bar__capright.xxsmall:before, .ok-dia__bar__capleft--xxsmall:before, .ok-diagram .cap.left.xxsmall:before, .ok-dia__bar__capleft.xxsmall:before, .ok-diagram .bar.xxsmall:before, .ok-dia__bar.xxsmall:before, input.xxsmall[type=range]:before {
+  content: "  ";
+}
+.ok-dia__bar--xsmall, .ok-dia__bar__capright--xsmall, .ok-dia__bar__pill.xsmall, .ok-dia__bar__pill--xsmall, .ok-diagram .pill.xsmall, .ok-diagram .cap.right.xsmall, .ok-dia__bar__capright.xsmall, .ok-dia__bar__capleft--xsmall, .ok-diagram .cap.left.xsmall, .ok-dia__bar__capleft.xsmall, .ok-diagram .bar.xsmall, .ok-dia__bar.xsmall, input.xsmall[type=range] {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xsmall' */
+  --size-factor: 0.64;
+  vertical-align: -1.4pt;
+  font-size: calc( var(--font-size-xsmall) * var(--font-factor) );
+}
+.ok-dia__bar--xsmall:before, .ok-dia__bar__capright--xsmall:before, .ok-dia__bar__pill.xsmall:before, .ok-dia__bar__pill--xsmall:before, .ok-diagram .pill.xsmall:before, .ok-diagram .cap.right.xsmall:before, .ok-dia__bar__capright.xsmall:before, .ok-dia__bar__capleft--xsmall:before, .ok-diagram .cap.left.xsmall:before, .ok-dia__bar__capleft.xsmall:before, .ok-diagram .bar.xsmall:before, .ok-dia__bar.xsmall:before, input.xsmall[type=range]:before {
+  content: "  ";
+}
+.ok-dia__bar--small, .ok-dia__bar__capright--small, .ok-dia__bar__pill.small, .ok-dia__bar__pill--small, .ok-diagram .pill.small, .ok-diagram .cap.right.small, .ok-dia__bar__capright.small, .ok-dia__bar__capleft--small, .ok-diagram .cap.left.small, .ok-dia__bar__capleft.small, .ok-diagram .bar.small, .ok-dia__bar.small, input.small[type=range] {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'small' */
+  --size-factor: 0.8;
+  vertical-align: -0.6pt;
+  font-size: calc( var(--font-size-small) * var(--font-factor) );
+}
+.ok-dia__bar--small:before, .ok-dia__bar__capright--small:before, .ok-dia__bar__pill.small:before, .ok-dia__bar__pill--small:before, .ok-diagram .pill.small:before, .ok-diagram .cap.right.small:before, .ok-dia__bar__capright.small:before, .ok-dia__bar__capleft--small:before, .ok-diagram .cap.left.small:before, .ok-dia__bar__capleft.small:before, .ok-diagram .bar.small:before, .ok-dia__bar.small:before, input.small[type=range]:before {
+  content: "  ";
+}
+.ok-dia__bar--regular, .ok-dia__button, .ok-diagram .button, .ok-dia__button--medium, .ok-diagram .button.medium, .ok-dia__button.medium, .ok-dia__bar__capright--regular, .ok-dia__bar__pill.regular, .ok-dia__bar__pill--regular, .ok-dia__bar__pill, .ok-diagram .pill.regular, .ok-diagram .pill, .ok-dia__bar__capright, .ok-dia__bar__capright--medium, .ok-dia__bar__pill.medium, .ok-dia__bar__pill--medium, .ok-diagram .pill.medium, .ok-diagram .cap.right.medium, .ok-dia__bar__capright.medium, .ok-diagram .cap.right.regular, .ok-diagram .cap.right, .ok-dia__bar__capright.regular, .ok-dia__bar__capleft--regular, .ok-diagram .pill, .ok-dia__bar__capleft, .ok-dia__bar__capleft--medium, .ok-diagram .cap.left.medium, .ok-dia__bar__capleft.medium, .ok-diagram .cap.left.regular, .ok-diagram .cap.left, .ok-dia__bar__capleft.regular, .ok-dia__bar, input[type=range], .ok-diagram .bar, .ok-dia__bar--medium, .ok-diagram .bar.medium, .ok-dia__bar.medium, input.medium[type=range], .ok-diagram .bar.regular, .ok-dia__bar.regular {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'regular' */
+  --size-factor: 1;
+  vertical-align: 0.6pt;
+  font-size: calc( var(--font-size-regular) * var(--font-factor) );
+}
+.ok-dia__bar--regular:before, .ok-dia__button:before, .ok-diagram .button:before, .ok-dia__button--medium:before, .ok-diagram .button.medium:before, .ok-dia__button.medium:before, .ok-dia__bar__capright--regular:before, .ok-dia__bar__pill.regular:before, .ok-dia__bar__pill--regular:before, .ok-dia__bar__pill:before, .ok-diagram .pill.regular:before, .ok-diagram .pill:before, .ok-dia__bar__capright:before, .ok-dia__bar__capright--medium:before, .ok-dia__bar__pill.medium:before, .ok-dia__bar__pill--medium:before, .ok-diagram .pill.medium:before, .ok-diagram .cap.right.medium:before, .ok-dia__bar__capright.medium:before, .ok-diagram .cap.right.regular:before, .ok-diagram .cap.right:before, .ok-dia__bar__capright.regular:before, .ok-dia__bar__capleft--regular:before, .ok-diagram .pill:before, .ok-dia__bar__capleft:before, .ok-dia__bar__capleft--medium:before, .ok-diagram .cap.left.medium:before, .ok-dia__bar__capleft.medium:before, .ok-diagram .cap.left.regular:before, .ok-diagram .cap.left:before, .ok-dia__bar__capleft.regular:before, .ok-dia__bar:before, input[type=range]:before, .ok-diagram .bar:before, .ok-dia__bar--medium:before, .ok-diagram .bar.medium:before, .ok-dia__bar.medium:before, input.medium[type=range]:before, .ok-diagram .bar.regular:before, .ok-dia__bar.regular:before {
+  content: "  ";
+}
+.ok-dia__bar--large, .ok-dia__bar__capright--large, .ok-dia__bar__pill.large, .ok-dia__bar__pill--large, .ok-diagram .pill.large, .ok-diagram .cap.right.large, .ok-dia__bar__capright.large, .ok-dia__bar__capleft--large, .ok-diagram .cap.left.large, .ok-dia__bar__capleft.large, .ok-diagram .bar.large, .ok-dia__bar.large, input.large[type=range] {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'large' */
+  --size-factor: 1.3333333333;
+  vertical-align: 2.5pt;
+  font-size: calc( var(--font-size-large) * var(--font-factor) );
+}
+.ok-dia__bar--large:before, .ok-dia__bar__capright--large:before, .ok-dia__bar__pill.large:before, .ok-dia__bar__pill--large:before, .ok-diagram .pill.large:before, .ok-diagram .cap.right.large:before, .ok-dia__bar__capright.large:before, .ok-dia__bar__capleft--large:before, .ok-diagram .cap.left.large:before, .ok-dia__bar__capleft.large:before, .ok-diagram .bar.large:before, .ok-dia__bar.large:before, input.large[type=range]:before {
+  content: "  ";
+}
+.ok-dia__bar--xlarge, .ok-dia__bar__capright--xlarge, .ok-dia__bar__pill.xlarge, .ok-dia__bar__pill--xlarge, .ok-diagram .pill.xlarge, .ok-diagram .cap.right.xlarge, .ok-dia__bar__capright.xlarge, .ok-dia__bar__capleft--xlarge, .ok-diagram .cap.left.xlarge, .ok-dia__bar__capleft.xlarge, .ok-diagram .bar.xlarge, .ok-dia__bar.xlarge, input.xlarge[type=range] {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xlarge' */
+  --size-factor: 1.7777777778;
+  vertical-align: 5pt;
+  font-size: calc( var(--font-size-xlarge) * var(--font-factor) );
+}
+.ok-dia__bar--xlarge:before, .ok-dia__bar__capright--xlarge:before, .ok-dia__bar__pill.xlarge:before, .ok-dia__bar__pill--xlarge:before, .ok-diagram .pill.xlarge:before, .ok-diagram .cap.right.xlarge:before, .ok-dia__bar__capright.xlarge:before, .ok-dia__bar__capleft--xlarge:before, .ok-diagram .cap.left.xlarge:before, .ok-dia__bar__capleft.xlarge:before, .ok-diagram .bar.xlarge:before, .ok-dia__bar.xlarge:before, input.xlarge[type=range]:before {
+  content: "  ";
+}
+.ok-dia__bar--xxlarge, .ok-dia__bar__capright--xxlarge, .ok-dia__bar__pill.xxlarge, .ok-dia__bar__pill--xxlarge, .ok-diagram .pill.xxlarge, .ok-diagram .cap.right.xxlarge, .ok-dia__bar__capright.xxlarge, .ok-dia__bar__capleft--xxlarge, .ok-diagram .cap.left.xxlarge, .ok-dia__bar__capleft.xxlarge, .ok-diagram .bar.xxlarge, .ok-dia__bar.xxlarge, input.xxlarge[type=range] {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxlarge' */
+  --size-factor: 2.3703703704;
+  vertical-align: 8.2pt;
+  font-size: calc( var(--font-size-xxlarge) * var(--font-factor) );
+}
+.ok-dia__bar--xxlarge:before, .ok-dia__bar__capright--xxlarge:before, .ok-dia__bar__pill.xxlarge:before, .ok-dia__bar__pill--xxlarge:before, .ok-diagram .pill.xxlarge:before, .ok-diagram .cap.right.xxlarge:before, .ok-dia__bar__capright.xxlarge:before, .ok-dia__bar__capleft--xxlarge:before, .ok-diagram .cap.left.xxlarge:before, .ok-dia__bar__capleft.xxlarge:before, .ok-diagram .bar.xxlarge:before, .ok-dia__bar.xxlarge:before, input.xxlarge[type=range]:before {
+  content: "  ";
+}
+.ok-dia__bar--xxxlarge, .ok-dia__bar__capright--xxxlarge, .ok-dia__bar__pill.xxxlarge, .ok-dia__bar__pill--xxxlarge, .ok-diagram .pill.xxxlarge, .ok-diagram .cap.right.xxxlarge, .ok-dia__bar__capright.xxxlarge, .ok-dia__bar__capleft--xxxlarge, .ok-diagram .cap.left.xxxlarge, .ok-dia__bar__capleft.xxxlarge, .ok-diagram .bar.xxxlarge, .ok-dia__bar.xxxlarge, input.xxxlarge[type=range] {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxxlarge' */
+  --size-factor: 3.1604938272;
+  vertical-align: 12.5pt;
+  font-size: calc( var(--font-size-xxxlarge) * var(--font-factor) );
+}
+.ok-dia__bar--xxxlarge:before, .ok-dia__bar__capright--xxxlarge:before, .ok-dia__bar__pill.xxxlarge:before, .ok-dia__bar__pill--xxxlarge:before, .ok-diagram .pill.xxxlarge:before, .ok-diagram .cap.right.xxxlarge:before, .ok-dia__bar__capright.xxxlarge:before, .ok-dia__bar__capleft--xxxlarge:before, .ok-diagram .cap.left.xxxlarge:before, .ok-dia__bar__capleft.xxxlarge:before, .ok-diagram .bar.xxxlarge:before, .ok-dia__bar.xxxlarge:before, input.xxxlarge[type=range]:before {
+  content: "  ";
+}
+.ok-dia__bar--xxxxlarge, .ok-dia__bar__capright--xxxxlarge, .ok-dia__bar__pill.xxxxlarge, .ok-dia__bar__pill--xxxxlarge, .ok-diagram .pill.xxxxlarge, .ok-diagram .cap.right.xxxxlarge, .ok-dia__bar__capright.xxxxlarge, .ok-dia__bar__capleft--xxxxlarge, .ok-diagram .cap.left.xxxxlarge, .ok-dia__bar__capleft.xxxxlarge, .ok-diagram .bar.xxxxlarge, .ok-dia__bar.xxxxlarge, input.xxxxlarge[type=range] {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxxxlarge' */
+  --size-factor: 4.2139917695;
+  vertical-align: 19pt;
+  font-size: calc( var(--font-size-xxxxlarge) * var(--font-factor) );
+}
+.ok-dia__bar--xxxxlarge:before, .ok-dia__bar__capright--xxxxlarge:before, .ok-dia__bar__pill.xxxxlarge:before, .ok-dia__bar__pill--xxxxlarge:before, .ok-diagram .pill.xxxxlarge:before, .ok-diagram .cap.right.xxxxlarge:before, .ok-dia__bar__capright.xxxxlarge:before, .ok-dia__bar__capleft--xxxxlarge:before, .ok-diagram .cap.left.xxxxlarge:before, .ok-dia__bar__capleft.xxxxlarge:before, .ok-diagram .bar.xxxxlarge:before, .ok-dia__bar.xxxxlarge:before, input.xxxxlarge[type=range]:before {
+  content: "  ";
+}
+.ok-dia__bar--xxxxxlarge, .ok-dia__bar__capright--xxxxxlarge, .ok-dia__bar__pill.xxxxxlarge, .ok-dia__bar__pill--xxxxxlarge, .ok-diagram .pill.xxxxxlarge, .ok-diagram .cap.right.xxxxxlarge, .ok-dia__bar__capright.xxxxxlarge, .ok-dia__bar__capleft--xxxxxlarge, .ok-diagram .cap.left.xxxxxlarge, .ok-dia__bar__capleft.xxxxxlarge, .ok-diagram .bar.xxxxxlarge, .ok-dia__bar.xxxxxlarge, input.xxxxxlarge[type=range] {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxxxxlarge' */
+  --size-factor: 5.6186556927;
+  vertical-align: 27pt;
+  font-size: calc( var(--font-size-xxxxxlarge) * var(--font-factor) );
+}
+.ok-dia__bar--xxxxxlarge:before, .ok-dia__bar__capright--xxxxxlarge:before, .ok-dia__bar__pill.xxxxxlarge:before, .ok-dia__bar__pill--xxxxxlarge:before, .ok-diagram .pill.xxxxxlarge:before, .ok-diagram .cap.right.xxxxxlarge:before, .ok-dia__bar__capright.xxxxxlarge:before, .ok-dia__bar__capleft--xxxxxlarge:before, .ok-diagram .cap.left.xxxxxlarge:before, .ok-dia__bar__capleft.xxxxxlarge:before, .ok-diagram .bar.xxxxxlarge:before, .ok-dia__bar.xxxxxlarge:before, input.xxxxxlarge[type=range]:before {
+  content: "  ";
+}
+.ok-dia__bar__capleft--xxxsmall, .ok-dia__bar__pill.xxxsmall, .ok-dia__bar__pill--xxxsmall, .ok-diagram .pill.xxxsmall, .ok-dia__bar__capleft--tiny, .ok-dia__bar__pill.tiny, .ok-dia__bar__pill--tiny, .ok-diagram .pill.tiny, .ok-diagram .cap.left.tiny, .ok-dia__bar__capleft.tiny, .ok-diagram .cap.left.xxxsmall, .ok-dia__bar__capleft.xxxsmall {
+  border-top-left-radius: calc( var(--bar-radius) * 0.4096 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 0.4096 );
+  padding-left: calc( var(--bar-radius) * 0.4096 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capleft--xxsmall, .ok-dia__bar__pill.xxsmall, .ok-dia__bar__pill--xxsmall, .ok-diagram .pill.xxsmall, .ok-diagram .cap.left.xxsmall, .ok-dia__bar__capleft.xxsmall {
+  border-top-left-radius: calc( var(--bar-radius) * 0.512 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 0.512 );
+  padding-left: calc( var(--bar-radius) * 0.512 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capleft--xsmall, .ok-dia__bar__pill.xsmall, .ok-dia__bar__pill--xsmall, .ok-diagram .pill.xsmall, .ok-diagram .cap.left.xsmall, .ok-dia__bar__capleft.xsmall {
+  border-top-left-radius: calc( var(--bar-radius) * 0.64 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 0.64 );
+  padding-left: calc( var(--bar-radius) * 0.64 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capleft--small, .ok-dia__bar__pill.small, .ok-dia__bar__pill--small, .ok-diagram .pill.small, .ok-diagram .cap.left.small, .ok-dia__bar__capleft.small {
+  border-top-left-radius: calc( var(--bar-radius) * 0.8 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 0.8 );
+  padding-left: calc( var(--bar-radius) * 0.8 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capleft--regular, .ok-dia__bar__pill.regular, .ok-dia__bar__pill--regular, .ok-dia__bar__pill, .ok-diagram .pill.regular, .ok-diagram .pill, .ok-dia__bar__capleft, .ok-dia__bar__capleft--medium, .ok-dia__bar__pill.medium, .ok-dia__bar__pill--medium, .ok-diagram .pill.medium, .ok-diagram .cap.left.medium, .ok-dia__bar__capleft.medium, .ok-diagram .cap.left.regular, .ok-diagram .cap.left, .ok-dia__bar__capleft.regular {
+  border-top-left-radius: calc( var(--bar-radius) * 1 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 1 );
+  padding-left: calc( var(--bar-radius) * 1 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capleft--large, .ok-dia__bar__pill.large, .ok-dia__bar__pill--large, .ok-diagram .pill.large, .ok-diagram .cap.left.large, .ok-dia__bar__capleft.large {
+  border-top-left-radius: calc( var(--bar-radius) * 1.3333333333 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 1.3333333333 );
+  padding-left: calc( var(--bar-radius) * 1.3333333333 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capleft--xlarge, .ok-dia__bar__pill.xlarge, .ok-dia__bar__pill--xlarge, .ok-diagram .pill.xlarge, .ok-diagram .cap.left.xlarge, .ok-dia__bar__capleft.xlarge {
+  border-top-left-radius: calc( var(--bar-radius) * 1.7777777778 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 1.7777777778 );
+  padding-left: calc( var(--bar-radius) * 1.7777777778 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capleft--xxlarge, .ok-dia__bar__pill.xxlarge, .ok-dia__bar__pill--xxlarge, .ok-diagram .pill.xxlarge, .ok-diagram .cap.left.xxlarge, .ok-dia__bar__capleft.xxlarge {
+  border-top-left-radius: calc( var(--bar-radius) * 2.3703703704 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 2.3703703704 );
+  padding-left: calc( var(--bar-radius) * 2.3703703704 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capleft--xxxlarge, .ok-dia__bar__pill.xxxlarge, .ok-dia__bar__pill--xxxlarge, .ok-diagram .pill.xxxlarge, .ok-diagram .cap.left.xxxlarge, .ok-dia__bar__capleft.xxxlarge {
+  border-top-left-radius: calc( var(--bar-radius) * 3.1604938272 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 3.1604938272 );
+  padding-left: calc( var(--bar-radius) * 3.1604938272 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capleft--xxxxlarge, .ok-dia__bar__pill.xxxxlarge, .ok-dia__bar__pill--xxxxlarge, .ok-diagram .pill.xxxxlarge, .ok-diagram .cap.left.xxxxlarge, .ok-dia__bar__capleft.xxxxlarge {
+  border-top-left-radius: calc( var(--bar-radius) * 4.2139917695 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 4.2139917695 );
+  padding-left: calc( var(--bar-radius) * 4.2139917695 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capleft--xxxxxlarge, .ok-dia__bar__pill.xxxxxlarge, .ok-dia__bar__pill--xxxxxlarge, .ok-diagram .pill.xxxxxlarge, .ok-diagram .cap.left.xxxxxlarge, .ok-dia__bar__capleft.xxxxxlarge {
+  border-top-left-radius: calc( var(--bar-radius) * 5.6186556927 );
+  border-bottom-left-radius: calc( var(--bar-radius) * 5.6186556927 );
+  padding-left: calc( var(--bar-radius) * 5.6186556927 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capright--xxxsmall, .ok-dia__bar__pill.xxxsmall, .ok-dia__bar__pill--xxxsmall, .ok-diagram .pill.xxxsmall, .ok-dia__bar__capright--tiny, .ok-dia__bar__pill.tiny, .ok-dia__bar__pill--tiny, .ok-diagram .pill.tiny, .ok-diagram .cap.right.tiny, .ok-dia__bar__capright.tiny, .ok-diagram .cap.right.xxxsmall, .ok-dia__bar__capright.xxxsmall {
+  border-top-right-radius: calc( var(--bar-radius) * 0.4096 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 0.4096 );
+  padding-right: calc( var(--bar-radius) * 0.4096 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capright--xxsmall, .ok-dia__bar__pill.xxsmall, .ok-dia__bar__pill--xxsmall, .ok-diagram .pill.xxsmall, .ok-diagram .cap.right.xxsmall, .ok-dia__bar__capright.xxsmall {
+  border-top-right-radius: calc( var(--bar-radius) * 0.512 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 0.512 );
+  padding-right: calc( var(--bar-radius) * 0.512 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capright--xsmall, .ok-dia__bar__pill.xsmall, .ok-dia__bar__pill--xsmall, .ok-diagram .pill.xsmall, .ok-diagram .cap.right.xsmall, .ok-dia__bar__capright.xsmall {
+  border-top-right-radius: calc( var(--bar-radius) * 0.64 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 0.64 );
+  padding-right: calc( var(--bar-radius) * 0.64 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capright--small, .ok-dia__bar__pill.small, .ok-dia__bar__pill--small, .ok-diagram .pill.small, .ok-diagram .cap.right.small, .ok-dia__bar__capright.small {
+  border-top-right-radius: calc( var(--bar-radius) * 0.8 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 0.8 );
+  padding-right: calc( var(--bar-radius) * 0.8 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capright--regular, .ok-dia__bar__pill.regular, .ok-dia__bar__pill--regular, .ok-dia__bar__pill, .ok-diagram .pill.regular, .ok-diagram .pill, .ok-dia__bar__capright, .ok-dia__bar__capright--medium, .ok-dia__bar__pill.medium, .ok-dia__bar__pill--medium, .ok-diagram .pill.medium, .ok-diagram .cap.right.medium, .ok-dia__bar__capright.medium, .ok-diagram .cap.right.regular, .ok-diagram .cap.right, .ok-dia__bar__capright.regular {
+  border-top-right-radius: calc( var(--bar-radius) * 1 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 1 );
+  padding-right: calc( var(--bar-radius) * 1 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capright--large, .ok-dia__bar__pill.large, .ok-dia__bar__pill--large, .ok-diagram .pill.large, .ok-diagram .cap.right.large, .ok-dia__bar__capright.large {
+  border-top-right-radius: calc( var(--bar-radius) * 1.3333333333 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 1.3333333333 );
+  padding-right: calc( var(--bar-radius) * 1.3333333333 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capright--xlarge, .ok-dia__bar__pill.xlarge, .ok-dia__bar__pill--xlarge, .ok-diagram .pill.xlarge, .ok-diagram .cap.right.xlarge, .ok-dia__bar__capright.xlarge {
+  border-top-right-radius: calc( var(--bar-radius) * 1.7777777778 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 1.7777777778 );
+  padding-right: calc( var(--bar-radius) * 1.7777777778 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capright--xxlarge, .ok-dia__bar__pill.xxlarge, .ok-dia__bar__pill--xxlarge, .ok-diagram .pill.xxlarge, .ok-diagram .cap.right.xxlarge, .ok-dia__bar__capright.xxlarge {
+  border-top-right-radius: calc( var(--bar-radius) * 2.3703703704 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 2.3703703704 );
+  padding-right: calc( var(--bar-radius) * 2.3703703704 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capright--xxxlarge, .ok-dia__bar__pill.xxxlarge, .ok-dia__bar__pill--xxxlarge, .ok-diagram .pill.xxxlarge, .ok-diagram .cap.right.xxxlarge, .ok-dia__bar__capright.xxxlarge {
+  border-top-right-radius: calc( var(--bar-radius) * 3.1604938272 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 3.1604938272 );
+  padding-right: calc( var(--bar-radius) * 3.1604938272 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capright--xxxxlarge, .ok-dia__bar__pill.xxxxlarge, .ok-dia__bar__pill--xxxxlarge, .ok-diagram .pill.xxxxlarge, .ok-diagram .cap.right.xxxxlarge, .ok-dia__bar__capright.xxxxlarge {
+  border-top-right-radius: calc( var(--bar-radius) * 4.2139917695 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 4.2139917695 );
+  padding-right: calc( var(--bar-radius) * 4.2139917695 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__capright--xxxxxlarge, .ok-dia__bar__pill.xxxxxlarge, .ok-dia__bar__pill--xxxxxlarge, .ok-diagram .pill.xxxxxlarge, .ok-diagram .cap.right.xxxxxlarge, .ok-dia__bar__capright.xxxxxlarge {
+  border-top-right-radius: calc( var(--bar-radius) * 5.6186556927 );
+  border-bottom-right-radius: calc( var(--bar-radius) * 5.6186556927 );
+  padding-right: calc( var(--bar-radius) * 5.6186556927 );
+  max-width: var(--bar-radius);
+}
+.ok-dia__bar__pill.tiny, .ok-dia__bar__pill--tiny, .ok-diagram .pill.tiny {
+  max-width: initial;
+}
+.ok-dia__bar__pill.xxxsmall, .ok-dia__bar__pill--xxxsmall, .ok-diagram .pill.xxxsmall {
+  max-width: initial;
+}
+.ok-dia__bar__pill.xxsmall, .ok-dia__bar__pill--xxsmall, .ok-diagram .pill.xxsmall {
+  max-width: initial;
+}
+.ok-dia__bar__pill.xsmall, .ok-dia__bar__pill--xsmall, .ok-diagram .pill.xsmall {
+  max-width: initial;
+}
+.ok-dia__bar__pill.small, .ok-dia__bar__pill--small, .ok-diagram .pill.small {
+  max-width: initial;
+}
+.ok-dia__bar__pill.medium, .ok-dia__bar__pill--medium, .ok-diagram .pill.medium {
+  max-width: initial;
+}
+.ok-dia__bar__pill.regular, .ok-dia__bar__pill--regular, .ok-dia__bar__pill, .ok-diagram .pill.regular, .ok-diagram .pill {
+  max-width: initial;
+}
+.ok-dia__bar__pill.large, .ok-dia__bar__pill--large, .ok-diagram .pill.large {
+  max-width: initial;
+}
+.ok-dia__bar__pill.xlarge, .ok-dia__bar__pill--xlarge, .ok-diagram .pill.xlarge {
+  max-width: initial;
+}
+.ok-dia__bar__pill.xxlarge, .ok-dia__bar__pill--xxlarge, .ok-diagram .pill.xxlarge {
+  max-width: initial;
+}
+.ok-dia__bar__pill.xxxlarge, .ok-dia__bar__pill--xxxlarge, .ok-diagram .pill.xxxlarge {
+  max-width: initial;
+}
+.ok-dia__bar__pill.xxxxlarge, .ok-dia__bar__pill--xxxxlarge, .ok-diagram .pill.xxxxlarge {
+  max-width: initial;
+}
+.ok-dia__bar__pill.xxxxxlarge, .ok-dia__bar__pill--xxxxxlarge, .ok-diagram .pill.xxxxxlarge {
+  max-width: initial;
+}
+.ok-dia__bar__top, .ok-diagram .bar .top {
+  border-top-left-radius: 22.6pt;
+  border-top-right-radius: 22.6pt;
+}
+.ok-dia__bar__bottom, .ok-diagram .bar .bottom {
+  border-bottom-left-radius: 22.6pt;
+  border-bottom-right-radius: 22.6pt;
+}
+.ok-dia__bar__top:before, .ok-diagram .bar .top:before, .ok-dia__bar__top:after, .ok-diagram .bar .top:after, .ok-dia__bar__bottom:before, .ok-diagram .bar .bottom:before, .ok-dia__bar__bottom:after, .ok-diagram .bar .bottom:after {
+  left: 25px;
+  right: 25px;
+}
+.ok-dia__bar.em_bar, input.em_bar[type=range], .ok-diagram .em_bar.bar {
+  width: 1em;
+}
+.ok-dia__bar.duo_em_bar, input.duo_em_bar[type=range], .ok-diagram .duo_em_bar.bar {
+  width: 2em;
+}
+.ok-dia__bar.quad_em_bar, input.quad_em_bar[type=range], .ok-diagram .quad_em_bar.bar {
+  width: 4em;
+}
+.ok-dia__bar.oct_em_bar, input.oct_em_bar[type=range], .ok-diagram .oct_em_bar.bar {
+  width: 8em;
+}
+.row > .ok-dia__bar, .row > input[type=range], .ok-diagram .row > .bar {
+  margin-left: var(--bar-inner-margin);
+}
+
+/* A button derived from span */
+.ok-dia__inline-button, .ok-diagram .spanbutton,
+.ok-diagram button {
+  /* Clickable span/bar */
+  font-family: inherit;
+  font-size: inherit;
+}
+.ok-dia__inline-button[data-label]:before, .ok-diagram [data-label].spanbutton:before,
+.ok-diagram button[data-label]:before {
+  content: attr(data-label);
+  color: black;
+}
+.ok-dia__inline-button[data-alt-label]:after, .ok-diagram [data-alt-label].spanbutton:after,
+.ok-diagram button[data-alt-label]:after {
+  content: attr(data-alt-label);
+  color: black;
+}
+.frame .ok-dia__inline-button, .frame .ok-diagram .spanbutton, .ok-diagram .frame .spanbutton,
+.frame .ok-diagram button,
+.ok-diagram .frame button {
+  min-height: 50px;
+}
+.frame .ok-dia__inline-button:before, .frame .ok-diagram .spanbutton:before, .ok-diagram .frame .spanbutton:before,
+.frame .ok-diagram button:before,
+.ok-diagram .frame button:before {
+  font-size: var(--label-size);
+  display: block;
+  padding: 4px 8px;
+  letter-spacing: -1px;
+  line-height: 1.25;
+  overflow: hidden;
+}
+.ok-dia__inline-button:hover, .ok-diagram .spanbutton:hover,
+.ok-diagram button:hover {
+  filter: brightness(133%);
+}
+.ok-dia__inline-button:active, .ok-diagram .spanbutton:active,
+.ok-diagram button:active {
+  filter: brightness(150%);
+}
+.ok-dia__inline-button--xxxsmall, .ok-diagram .spanbutton.xxxsmall,
+.ok-diagram button.xxxsmall, .ok-dia__inline-button.xxxsmall {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xxxsmall' */
+  font-size: calc( var(--font-size-xxxsmall) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 0.4096 );
+}
+.ok-dia__inline-button--xxxsmall:before, .ok-diagram .spanbutton.xxxsmall:before,
+.ok-diagram button.xxxsmall:before, .ok-dia__inline-button.xxxsmall:before {
+  content: "  ";
+}
+.ok-dia__inline-button--xxsmall, .ok-diagram .spanbutton.xxsmall,
+.ok-diagram button.xxsmall, .ok-dia__inline-button.xxsmall {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xxsmall' */
+  font-size: calc( var(--font-size-xxsmall) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 0.512 );
+}
+.ok-dia__inline-button--xxsmall:before, .ok-diagram .spanbutton.xxsmall:before,
+.ok-diagram button.xxsmall:before, .ok-dia__inline-button.xxsmall:before {
+  content: "  ";
+}
+.ok-dia__inline-button--xsmall, .ok-diagram .spanbutton.xsmall,
+.ok-diagram button.xsmall, .ok-dia__inline-button.xsmall {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xsmall' */
+  font-size: calc( var(--font-size-xsmall) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 0.64 );
+}
+.ok-dia__inline-button--xsmall:before, .ok-diagram .spanbutton.xsmall:before,
+.ok-diagram button.xsmall:before, .ok-dia__inline-button.xsmall:before {
+  content: "  ";
+}
+.ok-dia__inline-button--small, .ok-diagram .spanbutton.small,
+.ok-diagram button.small, .ok-dia__inline-button.small {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'small' */
+  font-size: calc( var(--font-size-small) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 0.8 );
+}
+.ok-dia__inline-button--small:before, .ok-diagram .spanbutton.small:before,
+.ok-diagram button.small:before, .ok-dia__inline-button.small:before {
+  content: "  ";
+}
+.ok-dia__inline-button--regular, .ok-diagram .spanbutton.regular,
+.ok-diagram button.regular, .ok-diagram .spanbutton,
+.ok-diagram button, .ok-dia__inline-button.regular {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'regular' */
+  font-size: calc( var(--font-size-regular) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 1 );
+}
+.ok-dia__inline-button--regular:before, .ok-diagram .spanbutton.regular:before,
+.ok-diagram button.regular:before, .ok-diagram .spanbutton:before,
+.ok-diagram button:before, .ok-dia__inline-button.regular:before {
+  content: "  ";
+}
+.ok-dia__inline-button--large, .ok-diagram .spanbutton.large,
+.ok-diagram button.large, .ok-dia__inline-button.large {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'large' */
+  font-size: calc( var(--font-size-large) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 1.3333333333 );
+}
+.ok-dia__inline-button--large:before, .ok-diagram .spanbutton.large:before,
+.ok-diagram button.large:before, .ok-dia__inline-button.large:before {
+  content: "  ";
+}
+.ok-dia__inline-button--xlarge, .ok-diagram .spanbutton.xlarge,
+.ok-diagram button.xlarge, .ok-dia__inline-button.xlarge {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xlarge' */
+  font-size: calc( var(--font-size-xlarge) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 1.7777777778 );
+}
+.ok-dia__inline-button--xlarge:before, .ok-diagram .spanbutton.xlarge:before,
+.ok-diagram button.xlarge:before, .ok-dia__inline-button.xlarge:before {
+  content: "  ";
+}
+.ok-dia__inline-button--xxlarge, .ok-diagram .spanbutton.xxlarge,
+.ok-diagram button.xxlarge, .ok-dia__inline-button.xxlarge {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xxlarge' */
+  font-size: calc( var(--font-size-xxlarge) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 2.3703703704 );
+}
+.ok-dia__inline-button--xxlarge:before, .ok-diagram .spanbutton.xxlarge:before,
+.ok-diagram button.xxlarge:before, .ok-dia__inline-button.xxlarge:before {
+  content: "  ";
+}
+.ok-dia__inline-button--xxxlarge, .ok-diagram .spanbutton.xxxlarge,
+.ok-diagram button.xxxlarge, .ok-dia__inline-button.xxxlarge {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xxxlarge' */
+  font-size: calc( var(--font-size-xxxlarge) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 3.1604938272 );
+}
+.ok-dia__inline-button--xxxlarge:before, .ok-diagram .spanbutton.xxxlarge:before,
+.ok-diagram button.xxxlarge:before, .ok-dia__inline-button.xxxlarge:before {
+  content: "  ";
+}
+.ok-dia__inline-button--xxxxlarge, .ok-diagram .spanbutton.xxxxlarge,
+.ok-diagram button.xxxxlarge, .ok-dia__inline-button.xxxxlarge {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xxxxlarge' */
+  font-size: calc( var(--font-size-xxxxlarge) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 4.2139917695 );
+}
+.ok-dia__inline-button--xxxxlarge:before, .ok-diagram .spanbutton.xxxxlarge:before,
+.ok-diagram button.xxxxlarge:before, .ok-dia__inline-button.xxxxlarge:before {
+  content: "  ";
+}
+.ok-dia__inline-button--xxxxxlarge, .ok-diagram .spanbutton.xxxxxlarge,
+.ok-diagram button.xxxxxlarge, .ok-dia__inline-button.xxxxxlarge {
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  /* Inline "block" span size 'xxxxxlarge' */
+  font-size: calc( var(--font-size-xxxxxlarge) * var(--font-factor) );
+  vertical-align: calc( 3.4pt * 5.6186556927 );
+}
+.ok-dia__inline-button--xxxxxlarge:before, .ok-diagram .spanbutton.xxxxxlarge:before,
+.ok-diagram button.xxxxxlarge:before, .ok-dia__inline-button.xxxxxlarge:before {
+  content: "  ";
+}
+/* A button derived from bar */
+.ok-dia__button, .ok-diagram .button {
+  /* Clickable span/bar */
+  font-family: inherit;
+  font-size: inherit;
+}
+.ok-dia__button[data-label]:before, .ok-diagram [data-label].button:before {
+  content: attr(data-label);
+  color: black;
+}
+.ok-dia__button[data-alt-label]:after, .ok-diagram [data-alt-label].button:after {
+  content: attr(data-alt-label);
+  color: black;
+}
+.frame .ok-dia__button, .frame .ok-diagram .button, .ok-diagram .frame .button {
+  min-height: 50px;
+}
+.frame .ok-dia__button:before, .frame .ok-diagram .button:before, .ok-diagram .frame .button:before {
+  font-size: var(--label-size);
+  display: block;
+  padding: 4px 8px;
+  letter-spacing: -1px;
+  line-height: 1.25;
+  overflow: hidden;
+}
+.ok-dia__button:hover, .ok-diagram .button:hover {
+  filter: brightness(133%);
+}
+.ok-dia__button:active, .ok-diagram .button:active {
+  filter: brightness(150%);
+}
+.ok-dia__button--xxxsmall, .ok-diagram .button.xxxsmall, .ok-dia__button.xxxsmall {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxxsmall' */
+  --size-factor: 0.4096;
+  vertical-align: -2.6pt;
+  font-size: calc( var(--font-size-xxxsmall) * var(--font-factor) );
+}
+.ok-dia__button--xxxsmall:before, .ok-diagram .button.xxxsmall:before, .ok-dia__button.xxxsmall:before {
+  content: "  ";
+}
+.ok-dia__button--xxsmall, .ok-diagram .button.xxsmall, .ok-dia__button.xxsmall {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxsmall' */
+  --size-factor: 0.512;
+  vertical-align: -2pt;
+  font-size: calc( var(--font-size-xxsmall) * var(--font-factor) );
+}
+.ok-dia__button--xxsmall:before, .ok-diagram .button.xxsmall:before, .ok-dia__button.xxsmall:before {
+  content: "  ";
+}
+.ok-dia__button--xsmall, .ok-diagram .button.xsmall, .ok-dia__button.xsmall {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xsmall' */
+  --size-factor: 0.64;
+  vertical-align: -1.4pt;
+  font-size: calc( var(--font-size-xsmall) * var(--font-factor) );
+}
+.ok-dia__button--xsmall:before, .ok-diagram .button.xsmall:before, .ok-dia__button.xsmall:before {
+  content: "  ";
+}
+.ok-dia__button--small, .ok-diagram .button.small, .ok-dia__button.small {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'small' */
+  --size-factor: 0.8;
+  vertical-align: -0.6pt;
+  font-size: calc( var(--font-size-small) * var(--font-factor) );
+}
+.ok-dia__button--small:before, .ok-diagram .button.small:before, .ok-dia__button.small:before {
+  content: "  ";
+}
+.ok-dia__button--regular, .ok-diagram .button.regular, .ok-diagram .button, .ok-dia__button.regular {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'regular' */
+  --size-factor: 1;
+  vertical-align: 0.6pt;
+  font-size: calc( var(--font-size-regular) * var(--font-factor) );
+}
+.ok-dia__button--regular:before, .ok-diagram .button.regular:before, .ok-diagram .button:before, .ok-dia__button.regular:before {
+  content: "  ";
+}
+.ok-dia__button--large, .ok-diagram .button.large, .ok-dia__button.large {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'large' */
+  --size-factor: 1.3333333333;
+  vertical-align: 2.5pt;
+  font-size: calc( var(--font-size-large) * var(--font-factor) );
+}
+.ok-dia__button--large:before, .ok-diagram .button.large:before, .ok-dia__button.large:before {
+  content: "  ";
+}
+.ok-dia__button--xlarge, .ok-diagram .button.xlarge, .ok-dia__button.xlarge {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xlarge' */
+  --size-factor: 1.7777777778;
+  vertical-align: 5pt;
+  font-size: calc( var(--font-size-xlarge) * var(--font-factor) );
+}
+.ok-dia__button--xlarge:before, .ok-diagram .button.xlarge:before, .ok-dia__button.xlarge:before {
+  content: "  ";
+}
+.ok-dia__button--xxlarge, .ok-diagram .button.xxlarge, .ok-dia__button.xxlarge {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxlarge' */
+  --size-factor: 2.3703703704;
+  vertical-align: 8.2pt;
+  font-size: calc( var(--font-size-xxlarge) * var(--font-factor) );
+}
+.ok-dia__button--xxlarge:before, .ok-diagram .button.xxlarge:before, .ok-dia__button.xxlarge:before {
+  content: "  ";
+}
+.ok-dia__button--xxxlarge, .ok-diagram .button.xxxlarge, .ok-dia__button.xxxlarge {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxxlarge' */
+  --size-factor: 3.1604938272;
+  vertical-align: 12.5pt;
+  font-size: calc( var(--font-size-xxxlarge) * var(--font-factor) );
+}
+.ok-dia__button--xxxlarge:before, .ok-diagram .button.xxxlarge:before, .ok-dia__button.xxxlarge:before {
+  content: "  ";
+}
+.ok-dia__button--xxxxlarge, .ok-diagram .button.xxxxlarge, .ok-dia__button.xxxxlarge {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxxxlarge' */
+  --size-factor: 4.2139917695;
+  vertical-align: 19pt;
+  font-size: calc( var(--font-size-xxxxlarge) * var(--font-factor) );
+}
+.ok-dia__button--xxxxlarge:before, .ok-diagram .button.xxxxlarge:before, .ok-dia__button.xxxxlarge:before {
+  content: "  ";
+}
+.ok-dia__button--xxxxxlarge, .ok-diagram .button.xxxxxlarge, .ok-dia__button.xxxxxlarge {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxxxxlarge' */
+  --size-factor: 5.6186556927;
+  vertical-align: 27pt;
+  font-size: calc( var(--font-size-xxxxxlarge) * var(--font-factor) );
+}
+.ok-dia__button--xxxxxlarge:before, .ok-diagram .button.xxxxxlarge:before, .ok-dia__button.xxxxxlarge:before {
+  content: "  ";
+}
+/* Elbow classes; horizontal (default) and vertical variant; for each size */
+.ok-dia__elbow, .ok-dia__elbow--default, .ok-diagram .elbow.default, .ok-diagram .elbow {
+  position: relative;
+  z-index: -100;
+}
+.ok-dia__elbow--xxxsmall, .ok-dia__elbow--tiny, .ok-dia__elbow.tiny, .tiny.ok-dia__elbow--default, .ok-diagram .tiny.elbow.default, .ok-diagram .tiny.elbow, .ok-dia__elbow.xxxsmall, .xxxsmall.ok-dia__elbow--default, .ok-diagram .xxxsmall.elbow.default, .ok-diagram .xxxsmall.elbow {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxxsmall' */
+  --size-factor: 0.4096;
+  vertical-align: -2.6pt;
+  font-size: calc( var(--font-size-xxxsmall) * var(--font-factor) );
+  --bar-size: calc( var(--bar-height) * 0.4096 );
+}
+.ok-dia__elbow--xxxsmall:before, .ok-dia__elbow--tiny:before, .ok-dia__elbow.tiny:before, .tiny.ok-dia__elbow--default:before, .ok-diagram .tiny.elbow.default:before, .ok-diagram .tiny.elbow:before, .ok-dia__elbow.xxxsmall:before, .xxxsmall.ok-dia__elbow--default:before, .ok-diagram .xxxsmall.elbow.default:before, .ok-diagram .xxxsmall.elbow:before {
+  content: "  ";
+}
+.ok-dia__elbow--xxsmall, .ok-dia__elbow.xxsmall, .xxsmall.ok-dia__elbow--default, .ok-diagram .xxsmall.elbow.default, .ok-diagram .xxsmall.elbow {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxsmall' */
+  --size-factor: 0.512;
+  vertical-align: -2pt;
+  font-size: calc( var(--font-size-xxsmall) * var(--font-factor) );
+  --bar-size: calc( var(--bar-height) * 0.512 );
+}
+.ok-dia__elbow--xxsmall:before, .ok-dia__elbow.xxsmall:before, .xxsmall.ok-dia__elbow--default:before, .ok-diagram .xxsmall.elbow.default:before, .ok-diagram .xxsmall.elbow:before {
+  content: "  ";
+}
+.ok-dia__elbow--xsmall, .ok-dia__elbow.xsmall, .xsmall.ok-dia__elbow--default, .ok-diagram .xsmall.elbow.default, .ok-diagram .xsmall.elbow {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xsmall' */
+  --size-factor: 0.64;
+  vertical-align: -1.4pt;
+  font-size: calc( var(--font-size-xsmall) * var(--font-factor) );
+  --bar-size: calc( var(--bar-height) * 0.64 );
+}
+.ok-dia__elbow--xsmall:before, .ok-dia__elbow.xsmall:before, .xsmall.ok-dia__elbow--default:before, .ok-diagram .xsmall.elbow.default:before, .ok-diagram .xsmall.elbow:before {
+  content: "  ";
+}
+.ok-dia__elbow--small, .ok-dia__elbow.small, .small.ok-dia__elbow--default, .ok-diagram .small.elbow.default, .ok-diagram .small.elbow {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'small' */
+  --size-factor: 0.8;
+  vertical-align: -0.6pt;
+  font-size: calc( var(--font-size-small) * var(--font-factor) );
+  --bar-size: calc( var(--bar-height) * 0.8 );
+}
+.ok-dia__elbow--small:before, .ok-dia__elbow.small:before, .small.ok-dia__elbow--default:before, .ok-diagram .small.elbow.default:before, .ok-diagram .small.elbow:before {
+  content: "  ";
+}
+.ok-dia__elbow--regular, .ok-dia__elbow, .ok-dia__elbow--default, .ok-diagram .elbow.default, .ok-diagram .elbow, .ok-dia__elbow--medium, .ok-dia__elbow.medium, .medium.ok-dia__elbow--default, .ok-diagram .medium.elbow.default, .ok-diagram .medium.elbow, .ok-dia__elbow.regular, .ok-diagram .regular.elbow.default, .ok-diagram .regular.elbow {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'regular' */
+  --size-factor: 1;
+  vertical-align: 0.6pt;
+  font-size: calc( var(--font-size-regular) * var(--font-factor) );
+  --bar-size: calc( var(--bar-height) * 1 );
+}
+.ok-dia__elbow--regular:before, .ok-dia__elbow:before, .ok-dia__elbow--default:before, .ok-diagram .elbow.default:before, .ok-diagram .elbow:before, .ok-dia__elbow--medium:before, .ok-dia__elbow.medium:before, .medium.ok-dia__elbow--default:before, .ok-diagram .medium.elbow.default:before, .ok-diagram .medium.elbow:before, .ok-dia__elbow.regular:before, .ok-diagram .regular.elbow.default:before, .ok-diagram .regular.elbow:before {
+  content: "  ";
+}
+.ok-dia__elbow--large, .ok-dia__elbow.large, .large.ok-dia__elbow--default, .ok-diagram .large.elbow.default, .ok-diagram .large.elbow {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'large' */
+  --size-factor: 1.3333333333;
+  vertical-align: 2.5pt;
+  font-size: calc( var(--font-size-large) * var(--font-factor) );
+  --bar-size: calc( var(--bar-height) * 1.3333333333 );
+}
+.ok-dia__elbow--large:before, .ok-dia__elbow.large:before, .large.ok-dia__elbow--default:before, .ok-diagram .large.elbow.default:before, .ok-diagram .large.elbow:before {
+  content: "  ";
+}
+.ok-dia__elbow--xlarge, .ok-dia__elbow.xlarge, .xlarge.ok-dia__elbow--default, .ok-diagram .xlarge.elbow.default, .ok-diagram .xlarge.elbow {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xlarge' */
+  --size-factor: 1.7777777778;
+  vertical-align: 5pt;
+  font-size: calc( var(--font-size-xlarge) * var(--font-factor) );
+  --bar-size: calc( var(--bar-height) * 1.7777777778 );
+}
+.ok-dia__elbow--xlarge:before, .ok-dia__elbow.xlarge:before, .xlarge.ok-dia__elbow--default:before, .ok-diagram .xlarge.elbow.default:before, .ok-diagram .xlarge.elbow:before {
+  content: "  ";
+}
+.ok-dia__elbow--xxlarge, .ok-dia__elbow.xxlarge, .xxlarge.ok-dia__elbow--default, .ok-diagram .xxlarge.elbow.default, .ok-diagram .xxlarge.elbow {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxlarge' */
+  --size-factor: 2.3703703704;
+  vertical-align: 8.2pt;
+  font-size: calc( var(--font-size-xxlarge) * var(--font-factor) );
+  --bar-size: calc( var(--bar-height) * 2.3703703704 );
+}
+.ok-dia__elbow--xxlarge:before, .ok-dia__elbow.xxlarge:before, .xxlarge.ok-dia__elbow--default:before, .ok-diagram .xxlarge.elbow.default:before, .ok-diagram .xxlarge.elbow:before {
+  content: "  ";
+}
+.ok-dia__elbow--xxxlarge, .ok-dia__elbow.xxxlarge, .xxxlarge.ok-dia__elbow--default, .ok-diagram .xxxlarge.elbow.default, .ok-diagram .xxxlarge.elbow {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxxlarge' */
+  --size-factor: 3.1604938272;
+  vertical-align: 12.5pt;
+  font-size: calc( var(--font-size-xxxlarge) * var(--font-factor) );
+  --bar-size: calc( var(--bar-height) * 3.1604938272 );
+}
+.ok-dia__elbow--xxxlarge:before, .ok-dia__elbow.xxxlarge:before, .xxxlarge.ok-dia__elbow--default:before, .ok-diagram .xxxlarge.elbow.default:before, .ok-diagram .xxxlarge.elbow:before {
+  content: "  ";
+}
+.ok-dia__elbow--xxxxlarge, .ok-dia__elbow.xxxxlarge, .xxxxlarge.ok-dia__elbow--default, .ok-diagram .xxxxlarge.elbow.default, .ok-diagram .xxxxlarge.elbow {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxxxlarge' */
+  --size-factor: 4.2139917695;
+  vertical-align: 19pt;
+  font-size: calc( var(--font-size-xxxxlarge) * var(--font-factor) );
+  --bar-size: calc( var(--bar-height) * 4.2139917695 );
+}
+.ok-dia__elbow--xxxxlarge:before, .ok-dia__elbow.xxxxlarge:before, .xxxxlarge.ok-dia__elbow--default:before, .ok-diagram .xxxxlarge.elbow.default:before, .ok-diagram .xxxxlarge.elbow:before {
+  content: "  ";
+}
+.ok-dia__elbow--xxxxxlarge, .ok-dia__elbow.xxxxxlarge, .xxxxxlarge.ok-dia__elbow--default, .ok-diagram .xxxxxlarge.elbow.default, .ok-diagram .xxxxxlarge.elbow {
+  /* Inline "block" bar */
+  /* Inline "block" span */
+  border-width: 0;
+  padding: 1pt 5pt 0pt 2pt;
+  margin: 5pt 2pt;
+  color: black;
+  vertical-align: 3pt;
+  font-size: calc( var(--font-size) * var(--font-factor) );
+  box-sizing: border-box;
+  letter-spacing: normal;
+  display: inline;
+  display: inline-block;
+  align-items: flex-start;
+  padding: var(--bar-padding-v) var(--bar-padding-h);
+  /* Inline "block" bar size 'xxxxxlarge' */
+  --size-factor: 5.6186556927;
+  vertical-align: 27pt;
+  font-size: calc( var(--font-size-xxxxxlarge) * var(--font-factor) );
+  --bar-size: calc( var(--bar-height) * 5.6186556927 );
+}
+.ok-dia__elbow--xxxxxlarge:before, .ok-dia__elbow.xxxxxlarge:before, .xxxxxlarge.ok-dia__elbow--default:before, .ok-diagram .xxxxxlarge.elbow.default:before, .ok-diagram .xxxxxlarge.elbow:before {
+  content: "  ";
+}
+.ok-dia__elbow--default, .ok-diagram .elbow.default, .ok-diagram .elbow {
+  min-height: var(--outer-radius);
+}
+.ok-dia__elbow--default--tiny {
+  --empty: true;
+}
+.ok-dia__elbow--default > div:first-child, .ok-diagram .elbow.default > div:first-child, .ok-diagram .elbow > div:first-child {
+  /* .bar */
+  position: absolute;
+  z-index: 1;
+  background-color: inherit;
+  border-color: inherit;
+  min-width: calc( var(--inner-radius) + var(--inner-bar-length) );
+}
+.ok-dia__elbow--default > div:first-child > div, .ok-diagram .elbow.default > div:first-child > div, .ok-diagram .elbow > div:first-child > div {
+  position: absolute;
+  border-color: inherit;
+  background-color: transparent;
+  border-style: solid;
+}
+.ok-dia__elbow--default > div:first-child > div:first-child, .ok-diagram .elbow > div:first-child > div:first-child {
+  /* "block" = inside border arc */
+  box-sizing: border-box;
+  min-width: calc( var(--inner-radius) - var(--bar-size) );
+  min-height: calc( var(--inner-radius) - var(--bar-size) );
+  --bar-h: calc( 0px - var(--bar-size) + 0px );
+}
+.ok-dia__elbow--default > div:first-child > div:nth-child(2), .ok-diagram .elbow > div:first-child > div:nth-child(2) {
+  /* "triangle" */
+  border-width: calc(var(--inner-radius) / 3.9);
+  min-height: 0;
+  min-width: 0;
+  /* hide by default, use when bar-height is smaller than inner-radius */
+  display: none;
+}
+.ok-dia__elbow--default--top-left > div:first-child, .ok-diagram .elbow.default.top-left > div:first-child, .ok-dia__elbow--default--top-right > div:first-child, .ok-diagram .elbow.default.top-right > div:first-child {
+  top: 0;
+  margin-top: 0;
+}
+.ok-dia__elbow--default--top-left > div:first-child > div:first-child, .ok-diagram .elbow.default.top-left > div:first-child > div:first-child, .ok-dia__elbow--default--top-right > div:first-child > div:first-child, .ok-diagram .elbow.default.top-right > div:first-child > div:first-child {
+  top: 0;
+}
+.ok-dia__elbow--default--top-left > div:first-child > div:nth-child(2), .ok-diagram .elbow.default.top-left > div:first-child > div:nth-child(2), .ok-dia__elbow--default--top-right > div:first-child > div:nth-child(2), .ok-diagram .elbow.default.top-right > div:first-child > div:nth-child(2) {
+  top: calc( var(--bar-size) );
+}
+.ok-dia__elbow--default--top-left:before, .ok-diagram .elbow.default.top-left:before, .ok-dia__elbow--default--top-right:before, .ok-diagram .elbow.default.top-right:before {
+  bottom: 0;
+}
+.ok-dia__elbow--default--top-left, .ok-diagram .elbow.default.top-left, .ok-dia__elbow--default--bottom-left, .ok-diagram .elbow.default.bottom-left {
+  text-align: right;
+}
+.ok-dia__elbow--default--top-left > div:first-child, .ok-diagram .elbow.default.top-left > div:first-child, .ok-dia__elbow--default--bottom-left > div:first-child, .ok-diagram .elbow.default.bottom-left > div:first-child {
+  margin-left: 0;
+}
+.ok-dia__elbow--default--top-left > div:first-child > div:first-child, .ok-diagram .elbow.default.top-left > div:first-child > div:first-child, .ok-dia__elbow--default--bottom-left > div:first-child > div:first-child, .ok-diagram .elbow.default.bottom-left > div:first-child > div:first-child {
+  left: var(--bar-h);
+}
+.ok-dia__elbow--default--top-left > div:first-child > div:nth-child(2), .ok-diagram .elbow.default.top-left > div:first-child > div:nth-child(2), .ok-dia__elbow--default--bottom-left > div:first-child > div:nth-child(2), .ok-diagram .elbow.default.bottom-left > div:first-child > div:nth-child(2) {
+  left: calc( 0px - var(--bar-size) );
+}
+.ok-dia__elbow--default--top-left:before, .ok-diagram .elbow.default.top-left:before, .ok-dia__elbow--default--bottom-left:before, .ok-diagram .elbow.default.bottom-left:before {
+  right: 0;
+}
+.ok-dia__elbow--default--top-right, .ok-diagram .elbow.default.top-right, .ok-dia__elbow--default--bottom-right, .ok-diagram .elbow.default.bottom-right {
+  text-align: left;
+}
+.ok-dia__elbow--default--top-right > div:first-child, .ok-diagram .elbow.default.top-right > div:first-child, .ok-dia__elbow--default--bottom-right > div:first-child, .ok-diagram .elbow.default.bottom-right > div:first-child {
+  margin-right: 0;
+  right: 100%;
+}
+.ok-dia__elbow--default--top-right > div:first-child > div:first-child, .ok-diagram .elbow.default.top-right > div:first-child > div:first-child, .ok-dia__elbow--default--bottom-right > div:first-child > div:first-child, .ok-diagram .elbow.default.bottom-right > div:first-child > div:first-child {
+  right: var(--bar-h);
+}
+.ok-dia__elbow--default--top-right > div:first-child > div:nth-child(2), .ok-diagram .elbow.default.top-right > div:first-child > div:nth-child(2), .ok-dia__elbow--default--bottom-right > div:first-child > div:nth-child(2), .ok-diagram .elbow.default.bottom-right > div:first-child > div:nth-child(2) {
+  right: calc( 0px - var(--bar-size) );
+}
+.ok-dia__elbow--default--top-right:before, .ok-diagram .elbow.default.top-right:before, .ok-dia__elbow--default--bottom-right:before, .ok-diagram .elbow.default.bottom-right:before {
+  left: 0;
+}
+.ok-dia__elbow--default--bottom-left > div:first-child, .ok-diagram .elbow.default.bottom-left > div:first-child, .ok-dia__elbow--default--bottom-right > div:first-child, .ok-diagram .elbow.default.bottom-right > div:first-child {
+  bottom: 0;
+  margin-bottom: 0;
+}
+.ok-dia__elbow--default--bottom-left > div:first-child > div:first-child, .ok-diagram .elbow.default.bottom-left > div:first-child > div:first-child, .ok-dia__elbow--default--bottom-right > div:first-child > div:first-child, .ok-diagram .elbow.default.bottom-right > div:first-child > div:first-child {
+  bottom: calc(100% - var(--bar-size));
+}
+.ok-dia__elbow--default--bottom-left > div:first-child > div:nth-child(2), .ok-diagram .elbow.default.bottom-left > div:first-child > div:nth-child(2), .ok-dia__elbow--default--bottom-right > div:first-child > div:nth-child(2), .ok-diagram .elbow.default.bottom-right > div:first-child > div:nth-child(2) {
+  bottom: calc( var(--bar-size) );
+}
+.ok-dia__elbow--default--bottom-left:before, .ok-diagram .elbow.default.bottom-left:before, .ok-dia__elbow--default--bottom-right:before, .ok-diagram .elbow.default.bottom-right:before {
+  top: 0;
+}
+.ok-dia__elbow--default--top-left, .ok-diagram .elbow.default.top-left {
+  border-top-left-radius: var(--outer-radius);
+}
+.ok-dia__elbow--default--top-left > div:first-child > div:first-child, .ok-diagram .elbow.default.top-left > div:first-child > div:first-child {
+  border-width: var(--bar-size) 0 0 var(--bar-size);
+  border-top-left-radius: 100%;
+}
+.ok-dia__elbow--default--top-left > div:first-child > div:nth-child(2), .ok-diagram .elbow.default.top-left > div:first-child > div:nth-child(2) {
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+.ok-dia__elbow--default--top-right, .ok-diagram .elbow.default.top-right {
+  border-top-right-radius: var(--outer-radius);
+}
+.ok-dia__elbow--default--top-right > div:first-child > div:first-child, .ok-diagram .elbow.default.top-right > div:first-child > div:first-child {
+  border-top-right-radius: 100%;
+  border-width: var(--bar-size) var(--bar-size) 0 0;
+}
+.ok-dia__elbow--default--top-right > div:first-child > div:nth-child(2), .ok-diagram .elbow.default.top-right > div:first-child > div:nth-child(2) {
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+.ok-dia__elbow--default--bottom-left, .ok-diagram .elbow.default.bottom-left {
+  border-bottom-left-radius: var(--outer-radius);
+}
+.ok-dia__elbow--default--bottom-left > div:first-child > div:first-child, .ok-diagram .elbow.default.bottom-left > div:first-child > div:first-child {
+  border-bottom-left-radius: 100%;
+  border-width: 0 0 var(--bar-size) var(--bar-size);
+}
+.ok-dia__elbow--default--bottom-left > div:first-child > div:nth-child(2), .ok-diagram .elbow.default.bottom-left > div:first-child > div:nth-child(2) {
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+.ok-dia__elbow--default--bottom-right, .ok-diagram .elbow.default.bottom-right {
+  border-bottom-right-radius: var(--outer-radius);
+}
+.ok-dia__elbow--default--bottom-right > div:first-child > div:first-child, .ok-diagram .elbow.default.bottom-right > div:first-child > div:first-child {
+  border-bottom-right-radius: 100%;
+  border-width: 0 var(--bar-size) var(--bar-size) 0;
+}
+.ok-dia__elbow--default--bottom-right > div:first-child > div:nth-child(2), .ok-diagram .elbow.default.bottom-right > div:first-child > div:nth-child(2) {
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+.ok-dia__elbow--default:before, .ok-diagram .elbow.default:before, .ok-diagram .elbow:before, .ok-dia__elbow--default:after, .ok-diagram .elbow.default:after, .ok-diagram .elbow:after {
+  font-size: var(--label-size);
+  display: block;
+  position: absolute;
+  letter-spacing: -1px;
+  line-height: 1.25;
+  z-index: 2;
+  background-color: transparent;
+  background-clip: content-box;
+  max-height: 100%;
+  overflow: hidden;
+}
+.ok-dia__elbow--default:before, .ok-diagram .elbow.default:before, .ok-diagram .elbow:before {
+  padding: 5px 7px;
+}
+.ok-dia__elbow--default:after, .ok-diagram .elbow.default:after, .ok-diagram .elbow:after {
+  padding: 5px 7px 5px;
+  bottom: 0px;
+  right: 70px;
+}
+/* Additional per-form SCSS */
+.ok-dia__baseform-0, .ok-diagram .f0,
+.ok-diagram .form-0 {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.ok-dia__baseform-0--fullwidth, .ok-dia__baseform-0.fullwidth, .ok-diagram .fullwidth.f0,
+.ok-diagram .fullwidth.form-0 {
+  max-width: initial;
+  margin: 0;
+  padding: 0 1em;
+}
+
+.ok-dia__baseform-1 > .content, .ok-diagram .f1 > .content,
+.ok-diagram .form-1 > .content {
+  padding: 0 var(--content-padding);
+}
+.ok-dia__baseform-1.small > .content, .ok-diagram .small.f1 > .content,
+.ok-diagram .small.form-1 > .content {
+  margin: 6pt auto 3pt auto;
+}
+.ok-dia__baseform-1 .column.frame, .ok-diagram .f1 .column.frame,
+.ok-diagram .form-1 .column.frame {
+  min-width: var(--bar-min-width);
+}
+
+.ok-dia__baseform-2_1 > .pane, .ok-diagram .f2_1 > .pane,
+.ok-diagram .form-2_1 > .pane, .ok-dia__baseform-2_1 > .rootpane, .ok-diagram .f2_1 > .rootpane,
+.ok-diagram .form-2_1 > .rootpane, .ok-dia__baseform-2_1 > .ok-diagram, .ok-diagram .f2_1 > .ok-diagram,
+.ok-diagram .form-2_1 > .ok-diagram {
+  overflow: hidden;
+}
+.ok-dia__baseform-2_1 > .pane > .column:first-child > *, .ok-diagram .f2_1 > .pane > .column:first-child > *,
+.ok-diagram .form-2_1 > .pane > .column:first-child > *, .ok-dia__baseform-2_1 > .rootpane > .column:first-child > *, .ok-diagram .f2_1 > .rootpane > .column:first-child > *,
+.ok-diagram .form-2_1 > .rootpane > .column:first-child > *, .ok-dia__baseform-2_1 > .ok-diagram > .column:first-child > *, .ok-diagram .f2_1 > .ok-diagram > .column:first-child > *,
+.ok-diagram .form-2_1 > .ok-diagram > .column:first-child > * {
+  text-align: right;
+}
+.ok-dia__baseform-2_1 > .pane > .column:not(.frame) > .row:first-child, .ok-diagram .f2_1 > .pane > .column:not(.frame) > .row:first-child,
+.ok-diagram .form-2_1 > .pane > .column:not(.frame) > .row:first-child, .ok-dia__baseform-2_1 > .rootpane > .column:not(.frame) > .row:first-child, .ok-diagram .f2_1 > .rootpane > .column:not(.frame) > .row:first-child,
+.ok-diagram .form-2_1 > .rootpane > .column:not(.frame) > .row:first-child, .ok-dia__baseform-2_1 > .ok-diagram > .column:not(.frame) > .row:first-child, .ok-diagram .f2_1 > .ok-diagram > .column:not(.frame) > .row:first-child,
+.ok-diagram .form-2_1 > .ok-diagram > .column:not(.frame) > .row:first-child,
+.ok-dia__baseform-2_1 > .pane > .column:not(.frame) > .row:last-child,
+.ok-diagram .f2_1 > .pane > .column:not(.frame) > .row:last-child,
+.ok-diagram .form-2_1 > .pane > .column:not(.frame) > .row:last-child,
+.ok-dia__baseform-2_1 > .rootpane > .column:not(.frame) > .row:last-child,
+.ok-diagram .f2_1 > .rootpane > .column:not(.frame) > .row:last-child,
+.ok-diagram .form-2_1 > .rootpane > .column:not(.frame) > .row:last-child,
+.ok-dia__baseform-2_1 > .ok-diagram > .column:not(.frame) > .row:last-child,
+.ok-diagram .f2_1 > .ok-diagram > .column:not(.frame) > .row:last-child,
+.ok-diagram .form-2_1 > .ok-diagram > .column:not(.frame) > .row:last-child {
+  --padding-h: calc( var(--inner-radius) + var(--inner-bar-length) - 0.2rem - 0.6rem );
+  padding-left: var(--padding-h);
+  padding-right: var(--padding-h);
+}
+.ok-dia__baseform-2_1 > .pane > .column:not(.frame) > .row.frame:first-child, .ok-diagram .f2_1 > .pane > .column:not(.frame) > .row.frame:first-child,
+.ok-diagram .form-2_1 > .pane > .column:not(.frame) > .row.frame:first-child, .ok-dia__baseform-2_1 > .rootpane > .column:not(.frame) > .row.frame:first-child, .ok-diagram .f2_1 > .rootpane > .column:not(.frame) > .row.frame:first-child,
+.ok-diagram .form-2_1 > .rootpane > .column:not(.frame) > .row.frame:first-child, .ok-dia__baseform-2_1 > .ok-diagram > .column:not(.frame) > .row.frame:first-child, .ok-diagram .f2_1 > .ok-diagram > .column:not(.frame) > .row.frame:first-child,
+.ok-diagram .form-2_1 > .ok-diagram > .column:not(.frame) > .row.frame:first-child {
+  margin-bottom: calc( var(--content-padding) / 2 );
+}
+.ok-dia__baseform-2_1 > .pane > .column:not(.frame) > .row.frame:last-child, .ok-diagram .f2_1 > .pane > .column:not(.frame) > .row.frame:last-child,
+.ok-diagram .form-2_1 > .pane > .column:not(.frame) > .row.frame:last-child, .ok-dia__baseform-2_1 > .rootpane > .column:not(.frame) > .row.frame:last-child, .ok-diagram .f2_1 > .rootpane > .column:not(.frame) > .row.frame:last-child,
+.ok-diagram .form-2_1 > .rootpane > .column:not(.frame) > .row.frame:last-child, .ok-dia__baseform-2_1 > .ok-diagram > .column:not(.frame) > .row.frame:last-child, .ok-diagram .f2_1 > .ok-diagram > .column:not(.frame) > .row.frame:last-child,
+.ok-diagram .form-2_1 > .ok-diagram > .column:not(.frame) > .row.frame:last-child {
+  margin-top: calc( var(--content-padding) / 2 );
+}
+.ok-dia__baseform-2_1 > .pane > .column:not(.frame) > :not(.frame), .ok-diagram .f2_1 > .pane > .column:not(.frame) > :not(.frame),
+.ok-diagram .form-2_1 > .pane > .column:not(.frame) > :not(.frame), .ok-dia__baseform-2_1 > .rootpane > .column:not(.frame) > :not(.frame), .ok-diagram .f2_1 > .rootpane > .column:not(.frame) > :not(.frame),
+.ok-diagram .form-2_1 > .rootpane > .column:not(.frame) > :not(.frame), .ok-dia__baseform-2_1 > .ok-diagram > .column:not(.frame) > :not(.frame), .ok-diagram .f2_1 > .ok-diagram > .column:not(.frame) > :not(.frame),
+.ok-diagram .form-2_1 > .ok-diagram > .column:not(.frame) > :not(.frame) {
+  margin-left: calc( var(--content-padding) / 2 );
+  margin-right: calc( var(--content-padding) / 2 );
+}
+.ok-dia__baseform-2_1 > .pane > .column:not(.frame) > .content, .ok-diagram .f2_1 > .pane > .column:not(.frame) > .content,
+.ok-diagram .form-2_1 > .pane > .column:not(.frame) > .content, .ok-dia__baseform-2_1 > .rootpane > .column:not(.frame) > .content, .ok-diagram .f2_1 > .rootpane > .column:not(.frame) > .content,
+.ok-diagram .form-2_1 > .rootpane > .column:not(.frame) > .content, .ok-dia__baseform-2_1 > .ok-diagram > .column:not(.frame) > .content, .ok-diagram .f2_1 > .ok-diagram > .column:not(.frame) > .content,
+.ok-diagram .form-2_1 > .ok-diagram > .column:not(.frame) > .content {
+  margin: 9pt auto 6pt auto;
+  padding: 0 var(--content-padding);
+}
+.ok-dia__baseform-2_1 > .pane > .column.frame, .ok-diagram .f2_1 > .pane > .column.frame,
+.ok-diagram .form-2_1 > .pane > .column.frame, .ok-dia__baseform-2_1 > .rootpane > .column.frame, .ok-diagram .f2_1 > .rootpane > .column.frame,
+.ok-diagram .form-2_1 > .rootpane > .column.frame, .ok-dia__baseform-2_1 > .ok-diagram > .column.frame, .ok-diagram .f2_1 > .ok-diagram > .column.frame,
+.ok-diagram .form-2_1 > .ok-diagram > .column.frame {
+  min-width: var(--column-width);
+}
+
+.ok-dia__baseform-1_3 .f13-1.header, .ok-diagram .f1_3 .f13-1.header,
+.ok-diagram .form-1_3 .f13-1.header {
+  margin-bottom: 5pt;
+}
+.ok-dia__baseform-1_3 .f13-1-1.frame > *, .ok-diagram .f1_3 .f13-1-1.frame > *,
+.ok-diagram .form-1_3 .f13-1-1.frame > *,
+.ok-dia__baseform-1_3 .f13-2-1.frame > *,
+.ok-diagram .f1_3 .f13-2-1.frame > *,
+.ok-diagram .form-1_3 .f13-2-1.frame > * {
+  min-width: var(--column-width);
+}
+.ok-dia__baseform-1_3 .f13-1-2-2.frame, .ok-diagram .f1_3 .f13-1-2-2.frame,
+.ok-diagram .form-1_3 .f13-1-2-2.frame,
+.ok-dia__baseform-1_3 .f13-2-2-1.frame,
+.ok-diagram .f1_3 .f13-2-2-1.frame,
+.ok-diagram .form-1_3 .f13-2-2-1.frame {
+  --padding-h: calc( var(--inner-radius) + var(--inner-bar-length) );
+  padding-left: var(--padding-h);
+}
+.ok-dia__baseform-1_3 > .row .row.frame, .ok-diagram .f1_3 > .row .row.frame,
+.ok-diagram .form-1_3 > .row .row.frame {
+  min-height: auto;
+}
+.ok-dia__baseform-1_3 > .row .row.frame > .bar.alt, .ok-diagram .f1_3 > .row .row.frame > .bar.alt,
+.ok-diagram .form-1_3 > .row .row.frame > .bar.alt {
+  min-height: 6pt;
+  max-height: 6pt;
+}
+.ok-dia__baseform-1_3 > .row.split, .ok-diagram .f1_3 > .row.split,
+.ok-diagram .form-1_3 > .row.split {
+  display: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 0;
+  max-height: 0;
+}
+.ok-dia__baseform-1_3 > .row.split > .block, .ok-diagram .f1_3 > .row.split > .block,
+.ok-diagram .form-1_3 > .row.split > .block {
+  --empty: null;
+}
+.ok-dia__baseform-1_3 > .row.body .row.frame, .ok-diagram .f1_3 > .row.body .row.frame,
+.ok-diagram .form-1_3 > .row.body .row.frame {
+  overflow: hidden;
+}
+.ok-dia__baseform-1_3 > .row.body .row.frame > .bar.alt, .ok-diagram .f1_3 > .row.body .row.frame > .bar.alt,
+.ok-diagram .form-1_3 > .row.body .row.frame > .bar.alt {
+  margin-top: auto;
+}
+.ok-dia__baseform-1_3 > .f13-1, .ok-diagram .f1_3 > .f13-1,
+.ok-diagram .form-1_3 > .f13-1 {
+  flex: 0.31;
+  overflow: hidden;
+}
+.ok-dia__baseform-1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1, .ok-diagram .f1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1,
+.ok-diagram .form-1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 {
+  padding: 0 var(--content-padding);
+  padding-bottom: calc( var(--content-padding) / 2 );
+  overflow-y: scroll;
+}
+.ok-dia__baseform-1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 .title, .ok-diagram .f1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 .title,
+.ok-diagram .form-1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 .title,
+.ok-dia__baseform-1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 h1,
+.ok-diagram .f1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 h1,
+.ok-diagram .form-1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 h1, .ok-dia__baseform-1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 h2, .ok-diagram .f1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 h2,
+.ok-diagram .form-1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 h2, .ok-dia__baseform-1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 h3, .ok-diagram .f1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 h3,
+.ok-diagram .form-1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 h3 {
+  margin: 0;
+  text-align: right;
+}
+.ok-dia__baseform-1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 .button-wrap, .ok-diagram .f1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 .button-wrap,
+.ok-diagram .form-1_3 > .f13-1 > .f13-1-2 > .f13-1-2-1 .button-wrap {
+  min-width: 225.9pt;
+  right: 0px;
+  bottom: 9%;
+  position: absolute;
+  width: auto;
+}
+.ok-dia__baseform-1_3 > .f13-2, .ok-diagram .f1_3 > .f13-2,
+.ok-diagram .form-1_3 > .f13-2 {
+  flex: 0.69;
+  overflow: hidden;
+}
+.ok-dia__baseform-1_3 > .f13-2 > .f13-2-2 > .f13-2-2-2, .ok-diagram .f1_3 > .f13-2 > .f13-2-2 > .f13-2-2-2,
+.ok-diagram .form-1_3 > .f13-2 > .f13-2-2 > .f13-2-2-2 {
+  padding: 0 var(--content-padding);
+  padding-top: 9pt;
+  padding-top: calc( var(--content-padding) / 2 );
+  overflow-y: scroll;
+  height: calc( 100% - 2 * var(--bar-height) );
+}
+.ok-dia__baseform-1_3 > .f13-2 > .f13-2-2 > .f13-2-2-2 > *, .ok-diagram .f1_3 > .f13-2 > .f13-2-2 > .f13-2-2-2 > *,
+.ok-diagram .form-1_3 > .f13-2 > .f13-2-2 > .f13-2-2-2 > * {
+  margin: 4.5pt;
+}
+
+.ok-dia__baseform-4 > .content, .ok-diagram .form-4 > .content {
+  height: 100%;
+  height: 300px;
+  overflow: hidden;
+  padding: 0 var(--content-padding);
+}
+.ok-dia__baseform-4 > .content .bar.vertical, .ok-diagram .form-4 > .content .bar.vertical {
+  margin-top: 75px;
+  margin-bottom: 45px;
+}
+.ok-dia__baseform-4 > .header, .ok-diagram .form-4 > .header,
+.ok-dia__baseform-4 > .footer,
+.ok-diagram .form-4 > .footer {
+  height: 220px;
+}
+
+/* Other  */
+.noscroll, .ok-diagram,
+.ok-diagram * {
+  /* Make scrollbars disappear in Chrome and supporting browsers */
+  /* And in Firefox */
+  scrollbar-width: none;
+}
+.noscroll::-webkit-scrollbar, .ok-diagram::-webkit-scrollbar,
+.ok-diagram ::-webkit-scrollbar, .noscroll::-webkit-scrollbar-track, .ok-diagram::-webkit-scrollbar-track,
+.ok-diagram ::-webkit-scrollbar-track, .noscroll::-webkit-scrollbar-thumb, .ok-diagram::-webkit-scrollbar-thumb,
+.ok-diagram ::-webkit-scrollbar-thumb {
+  width: 0;
+  height: 0;
+}
+
+@supports (scrollbar-width: none) {
+  /* Again for firefox FIXME: apply only for .noscroll */
+  html {
+    scrollbar-width: none;
+  }
+}
+/* Range input element */
+input[type=range] {
+  --length: 13rem;
+  --track-border: calc( var(--font-size) * 0.15 );
+  --slider-size: calc( var(--font-size) * 0.15 );
+  --slider-percent: 10;
+  --color-1: #fce94f;
+  background-color: black;
+  cursor: pointer;
+  max-width: 100%;
+}
+input[type=range]:not(.vertical) {
+  width: var(--length);
+}
+input[type=range].vertical {
+  width: calc( var(--bar-height) * var(--size-factor) );
+  height: var(--length);
+}
+
+/* Chrome does not want to share selector with any other class it seems,
+ * so instead of extends-class we need to use mixins */
+/* Apply styling for Chrome */
+@supports (-webkit-appearance: none) {
+  input[type=range] {
+    -webkit-appearance: none;
+  }
+  input[type=range]:not(.vertical)::-webkit-slider-runnable-track {
+    border: var(--track-border) solid transparent;
+    border-color: var(--color-1);
+    background: linear-gradient(to right, black, var(--color-1) calc(var(--slider-percent) * 1%), black 0);
+    height: calc( var(--bar-height) * var(--size-factor) );
+    width: var(--length);
+  }
+  input[type=range]:not(.vertical)::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: var(--color-1);
+    height: var(--width);
+    width: var(--slider-size);
+    margin-top: calc( 0px - var(--track-border) );
+  }
+  input[type=range].vertical {
+    -webkit-appearance: slider-vertical;
+  }
+  input[type=range].vertical::-webkit-slider-runnable-track {
+    border: var(--track-border) solid transparent;
+    border-color: var(--color-1);
+    background: linear-gradient(to top, black, var(--color-1) calc(var(--slider-percent) * 1%), black 0);
+    height: var(--length);
+    width: var(--width);
+  }
+  input[type=range].vertical::-webkit-slider-thumb {
+    background-color: var(--color-1);
+    height: var(--slider-size);
+    width: var(--width);
+    margin-right: calc( 0px - var(--track-border) );
+  }
+}
+/* Apply styling for Firefox */
+@supports (-moz-appearance: none) {
+  input[type=range] {
+    -moz-appearance: none;
+  }
+  input[type=range]:not(.vertical)::-moz-range-track {
+    border: var(--track-border) solid transparent;
+    border-color: var(--color-1);
+    background: linear-gradient(to right, black, var(--color-1) calc(var(--slider-percent) * 1%), black 0);
+    height: calc( var(--bar-height) * var(--size-factor) );
+    width: var(--length);
+  }
+  input[type=range]:not(.vertical)::-moz-range-thumb {
+    background-color: var(--color-1);
+    height: var(--width);
+    width: var(--slider-size);
+    margin-top: calc( 0px - var(--track-border) );
+    border-radius: 0;
+    border-width: 0;
+  }
+  input[type=range].vertical::-moz-range-track {
+    border: var(--track-border) solid transparent;
+    border-color: var(--color-1);
+    background: linear-gradient(to top, black, var(--color-1) calc(var(--slider-percent) * 1%), black 0);
+    height: var(--length);
+    width: var(--width);
+  }
+  input[type=range].vertical::-moz-range-thumb {
+    background-color: var(--color-1);
+    height: var(--slider-size);
+    width: var(--width);
+    margin-right: calc( 0px - var(--track-border) );
+    border-radius: 0;
+    border-width: 0;
+  }
+}
+/* HTML adjustments */
+h1 {
+  font-size: var(--font-size-xxlarge);
+}
+
+h2 {
+  font-size: var(--font-size-xlarge);
+}
+
+h3 {
+  font-size: var(--font-size-large);
+}
+
+h4 {
+  font-size: var(--font-size);
+}
+
+h5 {
+  font-size: var(--font-size-small);
+}
+
+h6 {
+  font-size: var(--font-size-xsmall);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 8pt;
+  margin-top: 15pt;
+}
+
+h4,
+h5,
+h6 {
+  margin-bottom: 8pt;
+  margin-top: 8pt;
+}
+
+p {
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+
+/* Local page styles */
+input:focus {
+  outline: none;
+}
+
+#select > .column:first-child {
+  text-align: right;
+}
+
+#terminal-003 > .column-1,
+#terminal-003 > .column-2,
+#terminal-003 > .column > .wrapper {
+  height: 100%;
+}
+#terminal-003 > .column-1 > .content.flexcv,
+#terminal-003 > .column-2 > .content.flexcv,
+#terminal-003 > .column > .wrapper > .content.flexcv {
+  height: 100%;
+  overflow-y: scroll;
+}
+#terminal-003 > .column-1 {
+  width: 78%;
+}
+#terminal-003 > .column-2 {
+  width: 22%;
+}
+
+#hnav .title {
+  color: #fce94f;
+}
+#hnav a.reference {
+  color: #ad7fa8;
+  display: inline;
+}
+#hnav p cite {
+  display: inline;
+  margin: auto 7px;
+}
+
+.form-field > *:first-child {
+  float: left;
+  width: 5em;
+  margin-right: 5px;
+  text-align: right;
+}
+
+.form-field > input[type=text] {
+  border: none;
+  background-color: black;
+}

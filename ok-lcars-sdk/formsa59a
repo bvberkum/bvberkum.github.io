@@ -1,0 +1,9 @@
+TypeError: app/ok-sdk/view/ok-json-html.pug:131
+    129| 
+    130|     if o.dirName
+  > 131|       +#{o.dirName.substr(1)}(o)
+    132|         block
+    133|     else
+    134|       +ok-element(o)
+
+Cannot read property 'call' of undefined

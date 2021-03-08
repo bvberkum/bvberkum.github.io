@@ -1,0 +1,135 @@
+:root {
+  --font-size: 16.0pt;
+  --font-factor: 0.6;
+  --label-size: 15pt;
+  --bar-size: var(--bar-height);
+  --bar-height: calc( var(--font-size) * 1.1299 );
+  --bar-radius: calc( var(--bar-height) / 2 );
+  --bar-length: calc( var(--font-size) * 1.1299 );
+  --bar-min-width: 0px;
+  --bar-margin: 3.0pt;
+  --bar-padding-h: 0.0pt;
+  --bar-padding-v: 0.0pt;
+  --bar-margin-h: var(--bar-margin);
+  --bar-margin-v: var(--bar-margin);
+  --bar-inner-margin: 3.75pt;
+  --inner-bar-length: 0px;
+  --column-width: 144pt;
+  --radius-width-ratio: 0.36;
+  --outer-radius: calc( var(--column-width) * var(--radius-width-ratio) );
+  --inner-radius: calc( var(--outer-radius) + var(--bar-height) );
+  --content-padding: calc( var(--outer-radius)/1.7 - var(--bar-height) );
+  --font-size-xxxsmall: calc( var(--font-size) * 0.4096 );
+  --bar-margin-v-xxxsmall: calc( var(--bar-margin-v) * 0.4096 );
+  --bar-margin-h-xxxsmall: calc( var(--bar-margin-h) * 0.4096 );
+  --font-size-xxsmall: calc( var(--font-size) * 0.512 );
+  --bar-margin-v-xxsmall: calc( var(--bar-margin-v) * 0.512 );
+  --bar-margin-h-xxsmall: calc( var(--bar-margin-h) * 0.512 );
+  --font-size-xsmall: calc( var(--font-size) * 0.64 );
+  --bar-margin-v-xsmall: calc( var(--bar-margin-v) * 0.64 );
+  --bar-margin-h-xsmall: calc( var(--bar-margin-h) * 0.64 );
+  --font-size-small: calc( var(--font-size) * 0.8 );
+  --bar-margin-v-small: calc( var(--bar-margin-v) * 0.8 );
+  --bar-margin-h-small: calc( var(--bar-margin-h) * 0.8 );
+  --font-size-regular: calc( var(--font-size) * 1 );
+  --bar-margin-v-regular: calc( var(--bar-margin-v) * 1 );
+  --bar-margin-h-regular: calc( var(--bar-margin-h) * 1 );
+  --font-size-large: calc( var(--font-size) * 1.3333333333 );
+  --bar-margin-v-large: calc( var(--bar-margin-v) * 1.3333333333 );
+  --bar-margin-h-large: calc( var(--bar-margin-h) * 1.3333333333 );
+  --font-size-xlarge: calc( var(--font-size) * 1.7777777778 );
+  --bar-margin-v-xlarge: calc( var(--bar-margin-v) * 1.7777777778 );
+  --bar-margin-h-xlarge: calc( var(--bar-margin-h) * 1.7777777778 );
+  --font-size-xxlarge: calc( var(--font-size) * 2.3703703704 );
+  --bar-margin-v-xxlarge: calc( var(--bar-margin-v) * 2.3703703704 );
+  --bar-margin-h-xxlarge: calc( var(--bar-margin-h) * 2.3703703704 );
+  --font-size-xxxlarge: calc( var(--font-size) * 3.1604938272 );
+  --bar-margin-v-xxxlarge: calc( var(--bar-margin-v) * 3.1604938272 );
+  --bar-margin-h-xxxlarge: calc( var(--bar-margin-h) * 3.1604938272 );
+  --font-size-xxxxlarge: calc( var(--font-size) * 4.2139917695 );
+  --bar-margin-v-xxxxlarge: calc( var(--bar-margin-v) * 4.2139917695 );
+  --bar-margin-h-xxxxlarge: calc( var(--bar-margin-h) * 4.2139917695 );
+  --font-size-xxxxxlarge: calc( var(--font-size) * 5.6186556927 );
+  --bar-margin-v-xxxxxlarge: calc( var(--bar-margin-v) * 5.6186556927 );
+  --bar-margin-h-xxxxxlarge: calc( var(--bar-margin-h) * 5.6186556927 );
+  --font-size-medium: var(--font-size-regular);
+  --font-size-tiny: var(--font-size-xxxsmall);
+  --line-height-medium: var(--line-height-regular);
+  --line-height-tiny: var(--line-height-xxxsmall);
+}
+
+:root {
+  --radius-width-ratio: 0.4;
+  --column-width: 180px;
+  --inner-bar-length: 30pt;
+  --bar-height: 6pt;
+}
+:root .content {
+  --bar-height: 17.75pt;
+}
+
+.ok-diagram > .layout-step-5 .elbow > div:first-child > div:nth-child(2),
+.layout-step-5 .ok-dia__elbow--default > div:first-child > div:nth-child(2) {
+  /* Show "triangle" */
+  display: block;
+}
+
+#rootpane {
+  --font-size: 16.0pt;
+  --font-factor: 0.6;
+  --label-size: 15pt;
+  --bar-size: var(--bar-height);
+  --bar-height: calc( var(--font-size) * 1.1299 );
+  --bar-radius: calc( var(--bar-height) / 2 );
+  --bar-length: calc( var(--font-size) * 1.1299 );
+  --bar-min-width: 0px;
+  --bar-margin: 3.0pt;
+  --bar-padding-h: 0.0pt;
+  --bar-padding-v: 0.0pt;
+  --bar-margin-h: var(--bar-margin);
+  --bar-margin-v: var(--bar-margin);
+  --bar-inner-margin: 3.75pt;
+  --inner-bar-length: 0px;
+  --column-width: 144pt;
+  --radius-width-ratio: 0.36;
+  --outer-radius: calc( var(--column-width) * var(--radius-width-ratio) );
+  --inner-radius: calc( var(--outer-radius) + var(--bar-height) );
+  --content-padding: calc( var(--outer-radius)/1.7 - var(--bar-height) );
+  --font-size-xxxsmall: calc( var(--font-size) * 0.4096 );
+  --bar-margin-v-xxxsmall: calc( var(--bar-margin-v) * 0.4096 );
+  --bar-margin-h-xxxsmall: calc( var(--bar-margin-h) * 0.4096 );
+  --font-size-xxsmall: calc( var(--font-size) * 0.512 );
+  --bar-margin-v-xxsmall: calc( var(--bar-margin-v) * 0.512 );
+  --bar-margin-h-xxsmall: calc( var(--bar-margin-h) * 0.512 );
+  --font-size-xsmall: calc( var(--font-size) * 0.64 );
+  --bar-margin-v-xsmall: calc( var(--bar-margin-v) * 0.64 );
+  --bar-margin-h-xsmall: calc( var(--bar-margin-h) * 0.64 );
+  --font-size-small: calc( var(--font-size) * 0.8 );
+  --bar-margin-v-small: calc( var(--bar-margin-v) * 0.8 );
+  --bar-margin-h-small: calc( var(--bar-margin-h) * 0.8 );
+  --font-size-regular: calc( var(--font-size) * 1 );
+  --bar-margin-v-regular: calc( var(--bar-margin-v) * 1 );
+  --bar-margin-h-regular: calc( var(--bar-margin-h) * 1 );
+  --font-size-large: calc( var(--font-size) * 1.3333333333 );
+  --bar-margin-v-large: calc( var(--bar-margin-v) * 1.3333333333 );
+  --bar-margin-h-large: calc( var(--bar-margin-h) * 1.3333333333 );
+  --font-size-xlarge: calc( var(--font-size) * 1.7777777778 );
+  --bar-margin-v-xlarge: calc( var(--bar-margin-v) * 1.7777777778 );
+  --bar-margin-h-xlarge: calc( var(--bar-margin-h) * 1.7777777778 );
+  --font-size-xxlarge: calc( var(--font-size) * 2.3703703704 );
+  --bar-margin-v-xxlarge: calc( var(--bar-margin-v) * 2.3703703704 );
+  --bar-margin-h-xxlarge: calc( var(--bar-margin-h) * 2.3703703704 );
+  --font-size-xxxlarge: calc( var(--font-size) * 3.1604938272 );
+  --bar-margin-v-xxxlarge: calc( var(--bar-margin-v) * 3.1604938272 );
+  --bar-margin-h-xxxlarge: calc( var(--bar-margin-h) * 3.1604938272 );
+  --font-size-xxxxlarge: calc( var(--font-size) * 4.2139917695 );
+  --bar-margin-v-xxxxlarge: calc( var(--bar-margin-v) * 4.2139917695 );
+  --bar-margin-h-xxxxlarge: calc( var(--bar-margin-h) * 4.2139917695 );
+  --font-size-xxxxxlarge: calc( var(--font-size) * 5.6186556927 );
+  --bar-margin-v-xxxxxlarge: calc( var(--bar-margin-v) * 5.6186556927 );
+  --bar-margin-h-xxxxxlarge: calc( var(--bar-margin-h) * 5.6186556927 );
+  --font-size-medium: var(--font-size-regular);
+  --font-size-tiny: var(--font-size-xxxsmall);
+  --line-height-medium: var(--line-height-regular);
+  --line-height-tiny: var(--line-height-xxxsmall);
+}

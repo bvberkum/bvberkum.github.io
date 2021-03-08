@@ -1,0 +1,226 @@
+.bg-cat-tng-2366-yellow-1 {
+  background-color: #fee042;
+}
+
+.text-tng-2366-yellow-1 {
+  background-color: #fee042;
+}
+
+.bg-cat-tng-2366-yellow-2 {
+  background-color: #febc09;
+}
+
+.text-tng-2366-yellow-2 {
+  background-color: #febc09;
+}
+
+.bg-cat-tng-2366-blue-1 {
+  background-color: #a7bed0;
+}
+
+.text-tng-2366-blue-1 {
+  background-color: #a7bed0;
+}
+
+.bg-cat-tng-2366-blue-2 {
+  background-color: #7d81c0;
+}
+
+.text-tng-2366-blue-2 {
+  background-color: #7d81c0;
+}
+
+.bg-cat-tng-2366-brown-1 {
+  background-color: #d8b458;
+}
+
+.text-tng-2366-brown-1 {
+  background-color: #d8b458;
+}
+
+.bg-cat-tng-2366-brown-2 {
+  background-color: #98765b;
+}
+
+.text-tng-2366-brown-2 {
+  background-color: #98765b;
+}
+
+:root {
+  --inner-bar-length: 8pt;
+  --content-padding: calc( var(--outer-radius)/2.0 - var(--bar-height) );
+}
+
+body.repro-image {
+  background-image: url("../../../media/image/bg.jpg");
+}
+
+.oval.small {
+  width: 35px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.f13-1-2-1 h1.title {
+  margin: 5pt 0 !important;
+  font-size: 42pt;
+  color: #fee042;
+  letter-spacing: -2pt;
+  white-space: nowrap;
+}
+.f13-1-2-1 > div > .numbers {
+  margin-left: 74pt;
+  line-height: 24pt;
+}
+.f13-1-2-1 > div > .numbers > .text,
+.f13-1-2-1 > div > .numbers > .text > .oval {
+  display: inline-block;
+}
+.f13-1-2-1 > div > .numbers > :nth-child(1) {
+  width: 70pt;
+}
+.f13-1-2-1 > div > .numbers > :nth-child(2) {
+  width: 150pt;
+}
+.f13-1-2-1 > div > .numbers > :nth-child(3) {
+  width: 52pt;
+}
+.f13-1-2-1 > div > .numbers > :nth-child(4) {
+  width: 143pt;
+}
+.f13-1-2-1 > div > .numbers > :nth-child(5) {
+  width: 62pt;
+}
+.f13-1-2-1 > div > .numbers > :nth-child(6) {
+  width: 130pt;
+}
+.f13-1-2-1 > div > .numbers > :nth-child(7) {
+  width: 120pt;
+}
+.f13-1-2-1 > div > :nth-child(2) > .text {
+  color: #e5cea3;
+}
+.f13-1-2-1 > div > :nth-child(2) > .text > .oval {
+  background-color: #e5cea3;
+}
+.f13-1-2-1 > div > :nth-child(3) > .text {
+  color: #a7bed0;
+}
+.f13-1-2-1 > div > :nth-child(3) > .text > .oval {
+  background-color: #a7bed0;
+}
+.f13-1-2-1 > div > :nth-child(4) > .text {
+  color: #fee042;
+}
+.f13-1-2-1 > div > :nth-child(4) > .text > .oval {
+  background-color: #fee042;
+}
+.f13-1-2-1 > div > :nth-child(5) > .text {
+  color: #d8b458;
+}
+.f13-1-2-1 > div > :nth-child(5) > .text > .oval {
+  background-color: #d8b458;
+}
+.f13-1-2-1 > div > :nth-child(6) > .text {
+  color: #be8e8f;
+}
+.f13-1-2-1 > div > :nth-child(6) > .text > .oval {
+  background-color: #be8e8f;
+}
+.f13-1-2-1 > div > :nth-child(7) > .text {
+  color: #7d81c0;
+}
+.f13-1-2-1 > div > :nth-child(7) > .text > .oval {
+  background-color: #7d81c0;
+}
+
+.f13-1-1.frame > .button {
+  min-height: 78pt;
+  background-color: #7d81c0;
+}
+.f13-1-1.frame > .elbow {
+  margin-top: 0;
+  background-color: #e5cea3;
+  border-color: #e5cea3;
+}
+.f13-1-1.frame > .elbow > .bar > div:nth-child(2) {
+  display: none;
+}
+
+.f13-1-2-2.frame > .bar {
+  background-color: #a7bed0;
+}
+
+.f13-2-2-1.frame > .bar {
+  background-color: #7d81c0;
+}
+
+.f13-2-1.frame > .elbow {
+  margin-bottom: 0;
+  min-height: 191pt;
+  background-color: #e5cea3;
+  border-color: #e5cea3;
+}
+.f13-2-1.frame > .elbow > .bar > div:nth-child(2) {
+  display: none;
+}
+.f13-2-1.frame > .bar {
+  margin-bottom: 0;
+  max-height: 46pt;
+}
+.f13-2-1.frame > .bar:nth-child(2) {
+  background-color: #7d81c0;
+}
+.f13-2-1.frame > .bar:nth-child(3) {
+  background-color: #bc9519;
+}
+.f13-2-1.frame > .bar:nth-child(4) {
+  background-color: #a7bed0;
+}
+.f13-2-1.frame > .bar:last-child {
+  background-color: #e5cea3;
+  min-height: initial;
+  max-height: initial;
+  height: auto;
+}
+
+/* Hide header numbers for smaller screen widths */
+@media (max-width: 622px) {
+  .f13-1-2-1 > div > .numbers > :nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 691px) {
+  .f13-1-2-1 > div > .numbers > :nth-child(3) {
+    display: none;
+  }
+}
+@media (max-width: 882px) {
+  .f13-1-2-1 > div > .numbers > :nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 965px) {
+  .f13-1-2-1 > div > .numbers > :nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 1137px) {
+  .f13-1-2-1 > div > .numbers > :nth-child(6) {
+    display: none;
+  }
+}
+@media (max-width: 1297px) {
+  .f13-1-2-1 > div > .numbers > :nth-child(7) {
+    display: none;
+  }
+}
+@media (max-width: 1439px) {
+  .f13-1-2-1 > div > .numbers > :nth-child(8) {
+    display: none;
+  }
+}
+/* Add margin to content to line up with header */
+.f13-2-2-2.content {
+  margin-left: 66pt;
+}
