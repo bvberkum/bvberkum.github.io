@@ -1,9 +1,0 @@
-TypeError: app/ok-sdk/view/lcars-form-3-inc.pug:8
-    6|     bars. Splitting the viewscreen around 30% from the top.
-    7| 
-  > 8|   -
-    9|     o = okNewElementOptions(o || {}, {
-    10|           "title": title || "BF-3"
-    11|         }, attributes);
-
-okNewElementOptions is not a function

@@ -3,7 +3,7 @@
 }
 
 .text-tng-2366-yellow-1 {
-  background-color: #fee042;
+  color: #fee042;
 }
 
 .bg-cat-tng-2366-yellow-2 {
@@ -11,7 +11,7 @@
 }
 
 .text-tng-2366-yellow-2 {
-  background-color: #febc09;
+  color: #febc09;
 }
 
 .bg-cat-tng-2366-blue-1 {
@@ -19,7 +19,7 @@
 }
 
 .text-tng-2366-blue-1 {
-  background-color: #a7bed0;
+  color: #a7bed0;
 }
 
 .bg-cat-tng-2366-blue-2 {
@@ -27,7 +27,7 @@
 }
 
 .text-tng-2366-blue-2 {
-  background-color: #7d81c0;
+  color: #7d81c0;
 }
 
 .bg-cat-tng-2366-brown-1 {
@@ -35,7 +35,7 @@
 }
 
 .text-tng-2366-brown-1 {
-  background-color: #d8b458;
+  color: #d8b458;
 }
 
 .bg-cat-tng-2366-brown-2 {
@@ -43,11 +43,11 @@
 }
 
 .text-tng-2366-brown-2 {
-  background-color: #98765b;
+  color: #98765b;
 }
 
 :root {
-  --inner-bar-length: 8pt;
+  --inner-bar-length: 4pt;
   --content-padding: calc( var(--outer-radius)/2.0 - var(--bar-height) );
 }
 
@@ -135,7 +135,7 @@ body.repro-image {
 }
 
 .f13-1-1.frame > .button {
-  min-height: 78pt;
+  min-height: 80pt;
   background-color: #7d81c0;
 }
 .f13-1-1.frame > .elbow {
@@ -157,7 +157,7 @@ body.repro-image {
 
 .f13-2-1.frame > .elbow {
   margin-bottom: 0;
-  min-height: 191pt;
+  min-height: 190pt;
   background-color: #e5cea3;
   border-color: #e5cea3;
 }

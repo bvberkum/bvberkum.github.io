@@ -39,7 +39,7 @@
 }
 
 .text-tng-2366-yellow-1 {
-  background-color: #fee042;
+  color: #fee042;
 }
 
 .bg-cat-tng-2366-yellow-2 {
@@ -47,7 +47,7 @@
 }
 
 .text-tng-2366-yellow-2 {
-  background-color: #febc09;
+  color: #febc09;
 }
 
 .bg-cat-tng-2366-blue-1 {
@@ -55,7 +55,7 @@
 }
 
 .text-tng-2366-blue-1 {
-  background-color: #a7bed0;
+  color: #a7bed0;
 }
 
 .bg-cat-tng-2366-blue-2 {
@@ -63,7 +63,7 @@
 }
 
 .text-tng-2366-blue-2 {
-  background-color: #7d81c0;
+  color: #7d81c0;
 }
 
 .bg-cat-tng-2366-brown-1 {
@@ -71,7 +71,7 @@
 }
 
 .text-tng-2366-brown-1 {
-  background-color: #d8b458;
+  color: #d8b458;
 }
 
 .bg-cat-tng-2366-brown-2 {
@@ -79,7 +79,7 @@
 }
 
 .text-tng-2366-brown-2 {
-  background-color: #98765b;
+  color: #98765b;
 }
 
 /* Node backgrounds colors */
@@ -743,6 +743,14 @@
   content: attr(data-alt-label);
   color: black;
 }
+.frame.flexh .ok-dia__span, .frame.flexh .ok-diagram .span, .ok-diagram .frame.flexh .span {
+  margin-left: 6pt;
+  margin-right: 6pt;
+}
+.frame.flexv .ok-dia__span, .frame.flexv .ok-diagram .span, .ok-diagram .frame.flexv .span {
+  margin-top: 3pt;
+  margin-bottom: 3pt;
+}
 .ok-dia__span--xxxsmall, .ok-dia__inline-button--tiny, .ok-diagram .spanbutton.tiny,
 .ok-diagram button.tiny, .ok-dia__inline-button.tiny, .ok-dia__span__capright--xxxsmall, .ok-dia__span__pill--xxxsmall, .ok-diagram .spanpill.xxxsmall, .ok-dia__span__pill.xxxsmall, .ok-dia__span__capright--tiny, .ok-dia__span__pill--tiny, .ok-diagram .spanpill.tiny, .ok-dia__span__pill.tiny, .ok-diagram .spancap.right.tiny, .ok-dia__span__capright.tiny, .ok-diagram .spancap.right.xxxsmall, .ok-dia__span__capright.xxxsmall, .ok-dia__span__capleft--xxxsmall, .ok-dia__span__capleft--tiny, .ok-diagram .spancap.left.tiny, .ok-dia__span__capleft.tiny, .ok-diagram .spancap.left.xxxsmall, .ok-dia__span__capleft.xxxsmall, .ok-dia__span--tiny, .ok-diagram .span.tiny, .ok-dia__span.tiny, .ok-diagram .span.xxxsmall, .ok-dia__span.xxxsmall {
   /* Inline "block" span */
@@ -1069,6 +1077,14 @@
 .ok-dia__bar[data-alt-label]:after, input[data-alt-label][type=range]:after, .ok-diagram [data-alt-label].bar:after {
   content: attr(data-alt-label);
   color: black;
+}
+.frame.flexh .ok-dia__bar, .frame.flexh input[type=range], .frame.flexh .ok-diagram .bar, .ok-diagram .frame.flexh .bar {
+  margin-left: 6pt;
+  margin-right: 6pt;
+}
+.frame.flexv .ok-dia__bar, .frame.flexv input[type=range], .frame.flexv .ok-diagram .bar, .ok-diagram .frame.flexv .bar {
+  margin-top: 3pt;
+  margin-bottom: 3pt;
 }
 .ok-dia__bar--xxxsmall, .ok-dia__button--tiny, .ok-diagram .button.tiny, .ok-dia__button.tiny, .ok-dia__bar__capright--xxxsmall, .ok-dia__bar__pill.xxxsmall, .ok-dia__bar__pill--xxxsmall, .ok-diagram .pill.xxxsmall, .ok-dia__bar__capright--tiny, .ok-dia__bar__pill.tiny, .ok-dia__bar__pill--tiny, .ok-diagram .pill.tiny, .ok-diagram .cap.right.tiny, .ok-dia__bar__capright.tiny, .ok-diagram .cap.right.xxxsmall, .ok-dia__bar__capright.xxxsmall, .ok-dia__bar__capleft--xxxsmall, .ok-dia__bar__capleft--tiny, .ok-diagram .cap.left.tiny, .ok-dia__bar__capleft.tiny, .ok-diagram .cap.left.xxxsmall, .ok-dia__bar__capleft.xxxsmall, .ok-dia__bar--tiny, .ok-diagram .bar.tiny, .ok-dia__bar.tiny, input.tiny[type=range], .ok-diagram .bar.xxxsmall, .ok-dia__bar.xxxsmall, input.xxxsmall[type=range] {
   /* Inline "block" bar */
@@ -1539,6 +1555,18 @@
   content: attr(data-alt-label);
   color: black;
 }
+.frame.flexh .ok-dia__inline-button, .frame.flexh .ok-diagram .spanbutton, .ok-diagram .frame.flexh .spanbutton,
+.frame.flexh .ok-diagram button,
+.ok-diagram .frame.flexh button {
+  margin-left: 6pt;
+  margin-right: 6pt;
+}
+.frame.flexv .ok-dia__inline-button, .frame.flexv .ok-diagram .spanbutton, .ok-diagram .frame.flexv .spanbutton,
+.frame.flexv .ok-diagram button,
+.ok-diagram .frame.flexv button {
+  margin-top: 3pt;
+  margin-bottom: 3pt;
+}
 .frame .ok-dia__inline-button, .frame .ok-diagram .spanbutton, .ok-diagram .frame .spanbutton,
 .frame .ok-diagram button,
 .ok-diagram .frame button {
@@ -1797,6 +1825,14 @@
 .ok-dia__button[data-alt-label]:after, .ok-diagram [data-alt-label].button:after {
   content: attr(data-alt-label);
   color: black;
+}
+.frame.flexh .ok-dia__button, .frame.flexh .ok-diagram .button, .ok-diagram .frame.flexh .button {
+  margin-left: 6pt;
+  margin-right: 6pt;
+}
+.frame.flexv .ok-dia__button, .frame.flexv .ok-diagram .button, .ok-diagram .frame.flexv .button {
+  margin-top: 3pt;
+  margin-bottom: 3pt;
 }
 .frame .ok-dia__button, .frame .ok-diagram .button, .ok-diagram .frame .button {
   min-height: 50px;
@@ -2372,6 +2408,9 @@
   /* hide by default, use when bar-height is smaller than inner-radius */
   display: none;
 }
+.ok-dia__elbow--default--top-left, .ok-diagram .elbow.default.top-left, .ok-dia__elbow--default--top-right, .ok-diagram .elbow.default.top-right {
+  margin-bottom: 4pt;
+}
 .ok-dia__elbow--default--top-left > div:first-child, .ok-diagram .elbow.default.top-left > div:first-child, .ok-dia__elbow--default--top-right > div:first-child, .ok-diagram .elbow.default.top-right > div:first-child {
   top: 0;
   margin-top: 0;
@@ -2415,6 +2454,9 @@
 }
 .ok-dia__elbow--default--top-right:before, .ok-diagram .elbow.default.top-right:before, .ok-dia__elbow--default--bottom-right:before, .ok-diagram .elbow.default.bottom-right:before {
   left: 0;
+}
+.ok-dia__elbow--default--bottom-left, .ok-diagram .elbow.default.bottom-left, .ok-dia__elbow--default--bottom-right, .ok-diagram .elbow.default.bottom-right {
+  margin-top: 4pt;
 }
 .ok-dia__elbow--default--bottom-left > div:first-child, .ok-diagram .elbow.default.bottom-left > div:first-child, .ok-dia__elbow--default--bottom-right > div:first-child, .ok-diagram .elbow.default.bottom-right > div:first-child {
   bottom: 0;
