@@ -2536,6 +2536,19 @@
   right: 70px;
 }
 /* Additional per-form SCSS */
+.row.frame.flexh .text.title {
+  margin-top: 3pt;
+  margin-bottom: 3pt;
+}
+.row.frame.flexh .text.title[align=right] {
+  margin-left: 0pt;
+  margin-right: 3pt;
+}
+.row.frame.flexh .text.title[align=left] {
+  margin-left: 3pt;
+  margin-right: 0pt;
+}
+
 .ok-dia__baseform-0, .ok-diagram .f0,
 .ok-diagram .form-0 {
   max-width: 1024px;
